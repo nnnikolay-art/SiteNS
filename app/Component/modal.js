@@ -1,8 +1,6 @@
 import ReactModal from 'react-modal';
 import Image from "next/image";
 
-
-
 const Modal = ({ isOpen, handleClose, children, itemModal }) => {
     console.log({itemModal})
     return (
