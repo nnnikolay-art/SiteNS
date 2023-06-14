@@ -52,7 +52,7 @@ const Page = () => {
                         {categories.map(({ id, name, imageUrl,desc,categoryProps }) => (
                             <Link
                                 key={id}
-                                href={categoryProps}
+                                href='../dataProducts/[id]' as={categoryProps}
 
                                 className="bg-blue-200 shadow-lg rounded-lg p-6 flex flex-col items-center transition-all duration-200 hover:scale-105"
                             >
@@ -63,7 +63,7 @@ const Page = () => {
                                            />
                                 <div className='text-center font-bold'>{name}</div>
                                 <div className='text-cyan-700 text-center'>{desc}</div>
-                                {console.log(categoryProps)}
+
                             </Link>
                         ))}
                     </div>

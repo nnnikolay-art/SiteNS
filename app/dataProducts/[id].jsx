@@ -2,7 +2,7 @@
 import {useEffect, useState} from 'react';
 import Image from "next/image";
 import {useSearchParams, useParams} from "next/navigation";
-import Modal from "../../Component/Modal"
+import Modal from "../Component/Modal"
 
 
 const Search = () => {
