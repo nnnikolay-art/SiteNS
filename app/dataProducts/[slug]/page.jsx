@@ -56,15 +56,6 @@ const Search = () => {
 
 
 
-    console.log(exCategory)
-
-
-
-
-    console.log(searchParams.slug)
-    console.log(selectedCategory)
-
-
 
 
     const data = {
