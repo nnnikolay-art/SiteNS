@@ -2,7 +2,7 @@
 import {useEffect, useState} from 'react';
 import Image from "next/image";
 import {useSearchParams, useParams} from "next/navigation";
-import Modal from '../../Component/modal'
+import Modal from "../../Component/Modal"
 
 
 const Search = () => {
@@ -866,7 +866,7 @@ const Search = () => {
                                    src={"/ProductImg/" + item.img}
                                    height={150}
                                    width={150}
-                                   onClick={ () => handleOpenModal(item) }
+
                                    alt="Товар"/>
                             <h2 className="text-xl font-bold mb-2">{item.title}</h2>
                             <p className="mb-1">{item.desc}</p>
@@ -876,6 +876,9 @@ const Search = () => {
                             {item.priceA &&
                                 <p className="mb-0 font-bold text-blue-800">{`Цена аренды ${item.priceA}`}</p>
                             }
+                            <button onClick={ () => handleOpenModal(item) }>
+                                Открыть
+                            </button>
                         </li>
                     ))}
                 </ul>
