@@ -1,14 +1,58 @@
 "use client"
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import Image from "next/image";
-
-
+import {useSearchParams, useParams} from "next/navigation";
+import Modal from '../../Component/modal'
 
 
 const Search = () => {
+    const searchParams  = useParams()
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('all');
     const [selectedCity, setSelectedCity] = useState('Izhevsk');
+    const [selectedCategory, setSelectedCategory] = useState('all');
+
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = (item) => {
+        setItemModal(item)
+        setIsModalOpen(true);
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    }
+
+    useEffect( () => {
+        if (exCategory)
+        {
+            setSelectedCategory(exCategory);
+        }
+    })
+
+
+    let exCategory = '';
+    if (searchParams.slug == 1)
+    {
+        exCategory = 'Кислородные концентраторы';
+        console.log('KK')
+    }
+
+    if (searchParams.slug == 2){
+        exCategory = 'Средства реабилитации';
+        console.log('SR')
+    }
+
+    if (searchParams.slug == 3){
+        exCategory = 'Приборы';
+        console.log('P')
+    }
+
+    if (searchParams.slug == 4)
+    {
+        exCategory = 'Комплектующие';
+        console.log('K')
+    }
 
 
 
@@ -25,6 +69,7 @@ const Search = () => {
                 longDesc:'Рото-носовые СиПАП-маски закрывают область рта и носа, и рекомендуются людям, которые спят с открытым ртом. Мягкий силикон маски BMC не натирает кожу, фиксация с помощью эластичных ремней на голове гарантирует отсутствие протечек и декомпрессии. Специальный клапан, встроенный в угловой коннектор, обеспечивает безопасность дыхания пациента и защиту от удушья в случае экстренного отключения лечебного аппарата или блокировки воздушного потока. Специальные фиксаторы-липучки на ремнях крепления позволяют надежно закрепить рото-носовую маску BMC на голове. Настроив ремни крепления один раз, последующие снятия маски осуществляются с помощью специальных клипс (защелок) на передней части маски. Угловой коннектор, к которому присоединяется дыхательная трубка, свободно вращается на 360 это позволяет избежать скручивания трубки во время сна. Рото-носовая маска BMC подходит для всех СиПАП и БиПАП-аппаратов со стандартным креплением диаметром 22мм и используется взрослыми пациентами с массой тела более 30 кг. В комплекте с шапочкой.',
                 category: 'Кислородные концентраторы',
                 priceA: '1 500 ₽. неделя',
+                price: '',
                 city:'Izhevsk'
             },
             {
@@ -35,6 +80,7 @@ const Search = () => {
                     '(Armed JAY 10 и его аналоги)',
                 category: 'Кислородные концентраторы',
                 priceA: '3 000 ₽. неделя',
+                price: '',
                 city:'Izhevsk'
             },
             {
@@ -45,6 +91,7 @@ const Search = () => {
                     '(Armed 10-L и его аналоги)',
                 category: 'Кислородные концентраторы',
                 priceA: '4 000 ₽ неделя',
+                price: '',
                 city:'Izhevsk'
             },
 
@@ -61,6 +108,7 @@ const Search = () => {
                     'Размер от ручки до подлокотника: 230 mm.\n',
                 category: 'Средства реабилитации',
                 priceA: '500 ₽. месяц(за пару)',
+                price: '',
                 city:'Izhevsk'
             },
             {
@@ -95,6 +143,7 @@ const Search = () => {
                 img: 'Trost.jpg',
                 desc: 'Средство реабилитации',
                 category: 'Средства реабилитации',
+                priceA: '',
                 price: '2 500',
                 city:'Izhevsk'
             },
@@ -146,6 +195,7 @@ const Search = () => {
                     'Грузоподъемность: кг 110\n' +
                     'Длина подножек: см 47-55\n',
                 category: 'Средства реабилитации',
+                priceA: '',
                 price: '64 900',
                 city:'Izhevsk'
             },
@@ -198,6 +248,7 @@ const Search = () => {
                     'Длина подножек: см 47-55\n',
                 category: 'Средства реабилитации',
                 price: '64 900',
+                priceA: '',
                 city:'Krasnodar'
             },
             {
@@ -218,6 +269,7 @@ const Search = () => {
                     'Автоматическое выключение и звуковая сигнализация окончания сеанса\n' +
                     'Индикация времени наработки',
                 category: 'Приборы',
+                price: '',
                 priceA: '600 ₽. за сутки',
                 city:'Izhevsk'
             },
@@ -258,6 +310,7 @@ const Search = () => {
                     'Костыль iWALK дает вам мобильность без помощи рук / боли и возвращает вам возможность вести функциональный и независимый образ жизни.\n'+
                     'С костылем iWALK снова можно толкать тележку для покупок, подниматься по лестнице, гулять с собакой и ходить на работу.',
                 category: 'Средства реабилитации',
+                price: '',
                 priceA: '2 990 ₽. за месяц',
                 city:'Izhevsk'
             },
@@ -274,6 +327,7 @@ const Search = () => {
                     'Встроенный аккумулятор обеспечивает автономную работу весов до 94 часов. \n' +
                     'Допускается санобработка весов (дезинфекция и облучение кварцем).\n',
                 category: 'Приборы',
+                price: '',
                 priceA: '1 100 ₽. за месяц',
                 city:'Izhevsk'
             },
@@ -314,6 +368,7 @@ const Search = () => {
                     '- Положения подножек, которые можно откинуть вверх, вбок или совсем снять;\n' +
                     '- Высоты подлокотников, расположенных на боковинах.',
                 category: 'Приборы',
+                price: '',
                 priceA: '1 500 ₽. за месяц',
                 city:'Izhevsk'
             },
@@ -340,6 +395,7 @@ const Search = () => {
                     'В комплекте с шапочкой.',
                 category: 'Комплектующие',
                 price: '5 500',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -363,6 +419,7 @@ const Search = () => {
                     'Ширина между поручнями: 43 см\n',
                 category: 'Средства реабилитации',
                 price: '5 990',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -384,6 +441,7 @@ const Search = () => {
                     'Материал: пластик с мягкой внутренней вставкой. Состав: 60% пластмасса, 40% полиэстер\n',
                 category: 'Средства реабилитации',
                 price: '4 990',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -403,6 +461,7 @@ const Search = () => {
                     'поэтому комфортная на ощупь, легкая и при этом прочная.',
                 category: 'Комплектующие',
                 price: '390',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -417,6 +476,7 @@ const Search = () => {
                     'Кислородного баллончика объемом 16 литров хватает до 140 вдохов или на приготовление не менее 30 порций кислородных коктейлей.\n',
                 category: 'Комплектующие',
                 price: '10 шт. за 5 200',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -435,6 +495,7 @@ const Search = () => {
                     'Трубка для соединения с источником кислорода, длина 2 м с универсальным коннектором\n',
                 category: 'Комплектующие',
                 price: '750',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -454,6 +515,7 @@ const Search = () => {
                     'Это стерильное изделие одноразового использования.',
                 category: 'Комплектующие',
                 price: '150',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -472,6 +534,7 @@ const Search = () => {
                 ,
                 category: 'Приборы',
                 price: '2490',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -490,6 +553,7 @@ const Search = () => {
                 ,
                 category: 'Приборы',
                 price: '150',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -503,6 +567,7 @@ const Search = () => {
                     'Приобретая допплер, вы приобретаете спокойствие на весь период вашей беременности'
                 ,
                 category: 'Приборы',
+                price: '',
                 priceA: '500 ₽. месяц',
                 city:'Izhevsk'
             },
@@ -526,6 +591,7 @@ const Search = () => {
                     'Травмы (переломы)'
                 ,
                 category: 'Приборы',
+                price: '',
                 priceA: '750 р за 10 дней',
                 city:'Izhevsk'
             },
@@ -547,6 +613,7 @@ const Search = () => {
                 ,
                 category: 'Комплектующие',
                 price: '490',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -580,6 +647,7 @@ const Search = () => {
                 ,
                 category: 'Комплектующие',
                 price: '999',
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -614,6 +682,7 @@ const Search = () => {
                     'На ранней стадии заболевания или для профилактики обострений аппарат может успешно выступать в качестве монотерапии артрита, артроза, остеохондроза, подагры, травматических повреждений.'
                 ,
                 category: 'Приборы',
+                price: '',
                 priceA: '700 за 10 дней',
                 city:'Izhevsk'
             },
@@ -633,6 +702,7 @@ const Search = () => {
                 ,
                 category: 'Комплектующие',
                 price: '14 900' ,
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -648,6 +718,7 @@ const Search = () => {
                 ,
                 category: 'Средства реабилитации',
                 price: '2 490' ,
+                priceA: '',
                 city:'Izhevsk'
             },
             {
@@ -663,6 +734,7 @@ const Search = () => {
                 ,
                 category: 'Средства реабилитации',
                 price: '14 900' ,
+                priceA: '',
                 city:'Krasnodar'
             },
             {
@@ -678,6 +750,7 @@ const Search = () => {
                 ,
                 category: 'Средства реабилитации',
                 price: '14 900' ,
+                priceA: '',
                 city:'Ekat'
             }
 
@@ -686,6 +759,9 @@ const Search = () => {
 
         ]
     }
+
+
+    const [itemModal, setItemModal] = useState([data.items]);
 
     const filteredData = data.items.filter((item) => {
         // Filtering based on search term
@@ -786,8 +862,12 @@ const Search = () => {
                             className="border-gray-300 border-2 mb-4 pb-4 last:mb-0 last:pb-0 text-center justify-center items-center"
                         >
                             <Image className='w-full max-h-full justify-center items-center transition-all
-                                duration-200 hover:scale-105 ' src={"/ProductImg/" + item.img} height={150} width={150}
-                             alt="Товар"/>
+                                duration-200 hover:scale-105 '
+                                   src={"/ProductImg/" + item.img}
+                                   height={150}
+                                   width={150}
+                                   onClick={ () => handleOpenModal(item) }
+                                   alt="Товар"/>
                             <h2 className="text-xl font-bold mb-2">{item.title}</h2>
                             <p className="mb-1">{item.desc}</p>
                             {item.price &&
@@ -802,8 +882,17 @@ const Search = () => {
             ) : (
                 <p className="text-lg text-center"><strong>Товары по выбранным параметрам поиска не найдены</strong></p>
             )}
+
+            <Modal isOpen={isModalOpen} handleClose={handleCloseModal} itemModal = {itemModal}>
+                <h2>Модальное окно</h2>
+                <p>Здесь находится контент модального окна</p>
+
+                <button onClick={handleCloseModal}>Закрыть</button>
+            </Modal>
+
         </div>
     );
 };
 
 export default Search;
+
