@@ -53,7 +53,7 @@ const Page = () => {
                             <Link
                                 key={id}
                                 href={{
-                                    pathname: '/dataProducts/page',
+                                    pathname: '/dataProducts',
                                     query: { slug: categorySlug },
                                 }}
 
