@@ -12,28 +12,28 @@ const categories = [
         name: 'Кислородные концентраторы',
         imageUrl: '/Icons/wind-solid.svg',
         desc: 'Для лечения ряда заболеваний с легкими и приготовления кислородных коктелей ',
-        categoryProps: '/dataProducts/1'
+        categoryProps: '1'
     },
     {
         id: 2,
         name: 'Комплектующие',
         imageUrl: '/Icons/code-compare-solid.svg',
         desc: 'Канюли, маски, трубки и другие расходные материалы для мед оборудования',
-        categoryProps: '/dataProducts/4'
+        categoryProps: '4'
     },
     {
         id: 3,
         name: 'Приборы',
         imageUrl: '/Icons/heart-circle-bolt-solid.svg',
         desc: 'Приборы для магнитной терапии, лампы для лечения желтухи у новорожденных, детские весы и тд.',
-        categoryProps: '/dataProducts/3'
+        categoryProps: '3'
     },
     {
         id: 4,
         name: 'Средства реабилитации',
         imageUrl: '/Icons/wheelchair-solid.svg',
         desc: 'Ходунки, Трости, Костыли, Кресла, Кровати для людей с дополнительными потребностями',
-        categoryProps: '/dataProducts/2'
+        categoryProps: '2'
     }
 ];
 
@@ -52,7 +52,7 @@ const Page = () => {
                         {categories.map(({ id, name, imageUrl,desc,categoryProps }) => (
                             <Link
                                 key={id}
-                                href='../dataProducts/[id]'
+                                href={`/dataProducts/${encodeURIComponent(categoryProps)}`}
 
                                 className="bg-blue-200 shadow-lg rounded-lg p-6 flex flex-col items-center transition-all duration-200 hover:scale-105"
                             >

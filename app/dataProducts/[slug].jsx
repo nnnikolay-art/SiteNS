@@ -1,12 +1,12 @@
 "use client"
 import {useEffect, useState} from 'react';
 import Image from "next/image";
-import {useSearchParams, useParams} from "next/navigation";
+import { useRouter } from 'next/router'
 import Modal from "../Component/Modal"
 
 
 const Search = () => {
-    const searchParams  = useParams()
+    const router = useRouter();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCity, setSelectedCity] = useState('Izhevsk');
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,23 +32,23 @@ const Search = () => {
 
 
     let exCategory = '';
-    if (searchParams.slug == 1)
+    if (router.query.slug == 1)
     {
         exCategory = 'Кислородные концентраторы';
         console.log('KK')
     }
 
-    if (searchParams.slug == 2){
+    if (router.query.slug == 2){
         exCategory = 'Средства реабилитации';
         console.log('SR')
     }
 
-    if (searchParams.slug == 3){
+    if (router.query.slug == 3){
         exCategory = 'Приборы';
         console.log('P')
     }
 
-    if (searchParams.slug == 4)
+    if (router.query.slug == 4)
     {
         exCategory = 'Комплектующие';
         console.log('K')
