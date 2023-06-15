@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import logo3 from '../../public/Logo3.jpg'
+import logo2 from '../../public/Logo3.jpg'
 import Image from 'next/image'
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
             <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="#" className="flex items-center">
-                        <Image src={logo3} alt="Flowbite Logo" className='h-14 w-28' width={400} height={150}/>
+                        <Image src={logo2} alt="Flowbite Logo" className='h-14 w-44' width={400} height={150}/>
 
                     </Link>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
