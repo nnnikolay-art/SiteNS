@@ -6,7 +6,7 @@ import Modal from "../../Component/Modal"
 
 
 const Search = () => {
-    const useParams = useParams();
+    const param = useParams();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCity, setSelectedCity] = useState('Izhevsk');
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,23 +32,23 @@ const Search = () => {
 
 
     let exCategory = '';
-    if (useParams.slug == 1)
+    if (param.slug == 1)
     {
         exCategory = 'Кислородные концентраторы';
         console.log('KK')
     }
 
-    if (useParams.slug == 2){
+    if (param.slug == 2){
         exCategory = 'Средства реабилитации';
         console.log('SR')
     }
 
-    if (useParams.slug == 3){
+    if (param.slug == 3){
         exCategory = 'Приборы';
         console.log('P')
     }
 
-    if (useParams.slug== 4)
+    if (param.slug== 4)
     {
         exCategory = 'Комплектующие';
         console.log('K')
