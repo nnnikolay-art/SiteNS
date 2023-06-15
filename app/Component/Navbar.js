@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full">
 
-        
+
 
 
             <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
@@ -68,7 +68,7 @@ const Navbar = () => {
 
                 </div>
             </nav>
-            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+           
         </div>
     );
 };
