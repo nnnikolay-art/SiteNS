@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full">
 
-            <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
+        
 
 
             <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
