@@ -28,7 +28,7 @@ const Search = () => {
         {
             setSelectedCategory(exCategory);
         }
-    })
+    },[])
 
 
     let exCategory = '';
