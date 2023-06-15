@@ -12,28 +12,28 @@ const categories = [
         name: 'Кислородные концентраторы',
         imageUrl: '/Icons/wind-solid.svg',
         desc: 'Для лечения ряда заболеваний с легкими и приготовления кислородных коктелей ',
-        categoryProps: '1'
+        categorySlug: '1'
     },
     {
         id: 2,
         name: 'Комплектующие',
         imageUrl: '/Icons/code-compare-solid.svg',
         desc: 'Канюли, маски, трубки и другие расходные материалы для мед оборудования',
-        categoryProps: '4'
+        categorySlug: '4'
     },
     {
         id: 3,
         name: 'Приборы',
         imageUrl: '/Icons/heart-circle-bolt-solid.svg',
         desc: 'Приборы для магнитной терапии, лампы для лечения желтухи у новорожденных, детские весы и тд.',
-        categoryProps: '3'
+        categorySlug: '3'
     },
     {
         id: 4,
         name: 'Средства реабилитации',
         imageUrl: '/Icons/wheelchair-solid.svg',
         desc: 'Ходунки, Трости, Костыли, Кресла, Кровати для людей с дополнительными потребностями',
-        categoryProps: '2'
+        categorySlug: '2'
     }
 ];
 
@@ -49,12 +49,12 @@ const Page = () => {
                 <div className="max-w-2xl mx-auto">
                     <h2 className="text-center text-3xl font-bold mb-10">Категории товаров</h2>
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-6 flex-col">
-                        {categories.map(({ id, name, imageUrl,desc,categoryProps }) => (
+                        {categories.map(({ id, name, imageUrl,desc,categorySlug }) => (
                             <Link
                                 key={id}
                                 href={{
                                     pathname: '/dataProducts/[slug]',
-                                    query: { slug: categoryProps },
+                                    query: { slug: categorySlug },
                                 }}
 
 
