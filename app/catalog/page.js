@@ -52,7 +52,12 @@ const Page = () => {
                         {categories.map(({ id, name, imageUrl,desc,categoryProps }) => (
                             <Link
                                 key={id}
-                                href={`/dataProducts/${encodeURIComponent(categoryProps)}`}
+                                href={{
+                                    pathname: '/dataProducts/[slug]',
+                                    query: { slug: categoryProps },
+                                }}
+
+
 
                                 className="bg-blue-200 shadow-lg rounded-lg p-6 flex flex-col items-center transition-all duration-200 hover:scale-105"
                             >
