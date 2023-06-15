@@ -1,14 +1,28 @@
+'use client'
+
 import Link from 'next/link';
-import logo2 from '../../public/Logo3.jpg'
+import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
+import { Dropdown } from "@nextui-org/react";
 
 const Navbar = () => {
+    const menuItems = [
+        { key: "new", name: "New File" },
+        { key: "copy", name: "Copy Link" },
+        { key: "edit", name: "Edit File" },
+        { key: "delete", name: "Delete File" },
+    ];
+
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full">
+
+            <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
+
+
             <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="#" className="flex items-center">
-                        <Image src={logo2} alt="Flowbite Logo" className='h-14 w-44' width={400} height={150}/>
+                        <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
 
                     </Link>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
@@ -30,8 +44,31 @@ const Navbar = () => {
                         </ul>
                     </div>
 
+
+
+                    <Dropdown >
+                        <Dropdown.Button flat className="visible  sm:invisible ">Меню</Dropdown.Button>
+                        <Dropdown.Menu aria-label="Dynamic Actions" >
+
+
+                                <Dropdown.Item  key= '1'     color={"default"}>
+                                    <Link href="#">Домашняя страница</Link>
+                                </Dropdown.Item>
+
+                                <Dropdown.Item  key= '2'     color={"default"}>
+                                    <Link href="/catalog">Каталог</Link>
+                                </Dropdown.Item>
+
+                                <Dropdown.Item  key='3' color={"default"}>
+                                    <Link href="/contact">Контакты</Link>
+                                </Dropdown.Item>
+
+                        </Dropdown.Menu>
+                    </Dropdown>
+
                 </div>
             </nav>
+            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         </div>
     );
 };
