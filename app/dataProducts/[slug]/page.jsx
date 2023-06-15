@@ -48,7 +48,7 @@ const Search = () => {
         console.log('P')
     }
 
-    if (param.slug== 4)
+    if (param.slug == 4)
     {
         exCategory = 'Комплектующие';
         console.log('K')
