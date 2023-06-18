@@ -3,6 +3,7 @@ import React from 'react'
 import screenlogo from '../../public/3.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from "next/head";
 
 
 
@@ -40,6 +41,18 @@ const categories = [
 const Page = () => {
     return (
         <div className="bg-gray-100 py-10">
+            <Head>
+                <title>
+                    Категории товаров
+                </title>
+                <meta
+                    name="Категории товаров"
+                    content="Категория: Кислородные концентраторы, Приборы, Средства реабилитации, Комплектующие"
+                    key="category"
+                />
+            </Head>
+
+
             <div className="absolute inset-0">
             <Image  src={screenlogo}
                     alt="background image"

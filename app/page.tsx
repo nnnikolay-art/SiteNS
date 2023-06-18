@@ -1,10 +1,24 @@
 import Image from 'next/image'
 import Navbar from '@/app/Component/Navbar'
 import logo from '../public/2.jpg'
+import Link from 'next/link'
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main>
+        <Head>
+            <title>
+                ЦентрМедПрокат. Средства реаблитации в аренду и продажу
+            </title>
+            <meta
+                name="Главная страница"
+                content="Трости, ходунки, костыли, кислородные концентраторы, кресла в аренду и на продажу"
+                key="desc"
+            />
+        </Head>
+
+
         <div className="bg-gray-100 py-10">
         <div className="absolute inset-0">
              <Image
@@ -19,11 +33,7 @@ export default function Home() {
 
             <div className="container font-semibold  mx-auto px-4">
                 <p className="text-2xl text-center ">Добро пожаловать в нашу компанию ЦентрМедПрокат!</p>
-                <p>- Мы предлагаем широкий выбор медицинского оборудования для аренды и продажи, включая специальные матрасы, Кресла для людей с дополнительными потребностями, пульсоксиметры, СИПАП аппараты и кислородные концентраторы и многое другое.</p>
-
-                <p>- Наша команда действует внимательно и заботливо, обеспечивая максимально комфортные условия работы с нашими клиентами.</p>
-                <p>Спасибо, что рассмотрели нашу компанию медицинского проката.</p>
-                <p>Мы надеемся на возможность сотрудничества и готовы ответить на все ваши вопросы, связанные с нашими услугами.</p>
+                <p>Предлагаем широкий выбор медицинского оборудования для аренды и продажи технический средств реаблитации</p>
 
 
               </div>
@@ -33,7 +43,7 @@ export default function Home() {
               <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наши преимущества</h2>
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-400 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Высокое качество товаров</h3>
                     <p className="text-gray-200 leading-relaxed">Мы предоставляем качественные товары у известных мировых брендов.</p>
                   </div>
@@ -45,7 +55,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-400 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Индивидуальный подход к каждому клиенту</h3>
                     <p className="text-gray-200 leading-relaxed">Мы ищем индивидуальный подход к каждому клиенту, учитывая его индивидуальные потребности и цели.</p>
                   </div>
@@ -58,7 +68,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-400 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Широкий ассортимент товаров</h3>
                     <p className="text-gray-200 leading-relaxed">Мы стараемся удовлетворить любые потребности наших клиентов</p>
                   </div>
@@ -72,24 +82,29 @@ export default function Home() {
               </div>
 
                 <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Работаем в городах</h2>
-                <div className='lg:columns-3 sm:columns-1'>
+                <div className='columns-1'>
                     <div className="w-full  px-4 mb-8">
-                        <div className="bg-blue-700 text-white py-10 px-8 rounded-lg shadow-lg">
-                            <h3 className="text-xl text-center font-semibold mb-4">Ижевск</h3>
-                        </div>
-                    </div>
-                    <div className="w-full px-4 mb-8">
-                        <div className="bg-blue-700 e text-white py-10 px-8 rounded-lg shadow-lg">
-                            <h3 className="text-xl text-center font-semibold mb-4">Екатеринбург</h3>
-                        </div>
-                    </div>
-                    <div className="w-full px-4 mb-8">
-                        <div className="bg-blue-700 e text-white py-10 px-8 rounded-lg shadow-lg">
-                            <h3 className="text-xl text-center font-semibold mb-4">Краснодар</h3>
-                        </div>
+                            <p className="text-xl font-semibold mb-4">Ижевск</p>
+                            <p className="text-xl font-semibold mb-4">Краснодар</p>
+                            <p className="text-xl font-semibold mb-4">Екатеринбург</p>
                     </div>
                 </div>
 
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
+                <p className="text-xl font-semibold mb-4">- Костыли, ходунки, трости</p>
+                <p className="text-xl font-semibold mb-4">- Пульсоксиметры</p>
+                <p className="text-xl font-semibold mb-4">- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
+                <p className="text-xl font-semibold mb-4">- СИПАП аппараты</p>
+                <p className="text-xl font-semibold mb-4">- Алмаг</p>
+                <p className="text-xl font-semibold mb-4">- Специальные кресла, матрасы</p>
+                <p className="text-xl font-semibold mb-4">- Комплектующие</p>
+                <p className="text-xl font-semibold mb-4">- Кислородные баллончики</p>
+                <p className="text-xl font-semibold mb-4">- и многое другое</p>
+
+                <p className="text-xl font-semibold mb-4">Можете ознакомиться с нашим товаром очень просто. Выберете желаемую операцию:</p>
+
+                <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
+                <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
 
             </div>
 

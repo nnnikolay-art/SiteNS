@@ -3,6 +3,7 @@ import PhoneIcon from '../../public/Icons/phone-solid.svg'
 import MailIcon from '../../public/Icons/envelope-solid.svg'
 import addr from '../../public/Icons/house-solid.svg'
 import Image from "next/image";
+import Head from "next/head";
 
 
 const contacts = [
@@ -18,6 +19,17 @@ export const metadata = {
 
 const ContactList = () => (
     <div className="bg-gray-100 py-10">
+        <Head>
+            <title>
+                Контакты компании
+            </title>
+            <meta
+                name="Контакты компании"
+                content="Контакты компании: Телефон, адрес, почта"
+                key="contact"
+            />
+        </Head>
+
         <div className="max-w-2xl mx-auto">
             <h2 className="text-center text-3xl font-bold mb-10">Список контактов</h2>
             {contacts.map(({ city, phone, email ,address}) => (

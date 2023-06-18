@@ -1,8 +1,9 @@
 "use client"
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 import { useRouter,useSearchParams, useParams  } from 'next/navigation'
 import Modal from "../../Component/Modal"
+import Head from "next/head";
 
 
 const Search = () => {
@@ -800,6 +801,18 @@ const Search = () => {
 
     return (
         <div className="flex flex-col px-4 py-6 mx-auto   ">
+            <Head>
+                <title>
+                    Товары компании
+                </title>
+                <meta
+                    name="товары компании"
+                    content="Товары компании, поиск товара по названию, категории"
+                    key="contact"
+                />
+            </Head>
+
+
             <h1 className="text-center text-3xl font-bold mb-4">Товарный ассортимент</h1>
 
             {/* Search input */}
@@ -876,7 +889,7 @@ const Search = () => {
                             {item.priceA &&
                                 <p className="mb-0 font-bold text-blue-800">{`Цена аренды ${item.priceA}`}</p>
                             }
-                            <button onClick={ () => handleOpenModal(item) }>
+                            <button className="bg-blue-500 hover:bg-blue-800 text-white py-2 px-4 rounded-lg font-bold" onClick={ () => handleOpenModal(item) }>
                                 Открыть
                             </button>
                         </li>

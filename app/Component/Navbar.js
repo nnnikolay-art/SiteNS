@@ -19,7 +19,7 @@ const Navbar = () => {
 
 
 
-            <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+            <nav className="bg-white border-gray-200 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="#" className="flex items-center">
                         <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <Dropdown.Menu aria-label="Dynamic Actions" >
 
 
-                                <Dropdown.Item  key= '1'     color={"default"}>
+                                <Dropdown.Item   key= '1'     color={"default"}>
                                     <Link href="#">Домашняя страница</Link>
                                 </Dropdown.Item>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
 
                 </div>
             </nav>
-           
+
         </div>
     );
 };
