@@ -900,10 +900,7 @@ const Search = () => {
             )}
 
             <Modal isOpen={isModalOpen} handleClose={handleCloseModal} itemModal = {itemModal}>
-                <h2>Модальное окно</h2>
-                <p>Здесь находится контент модального окна</p>
 
-                <button onClick={handleCloseModal}>Закрыть</button>
             </Modal>
 
         </div>
