@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
-import { Dropdown } from "@nextui-org/react";
+import {Dropdown, Text} from "@nextui-org/react";
 
 const Navbar = () => {
     const menuItems = [
@@ -55,25 +55,42 @@ const Navbar = () => {
 
 
 
-                    <Dropdown disableAnimation={true} >
+                    <Dropdown >
                         <Dropdown.Button flat className="visible  sm:invisible ">☰</Dropdown.Button>
-                        <Dropdown.Menu aria-label="Dynamic Actions" >
+                        <Dropdown.Menu aria-label="Static Actions" >
 
 
-                                <Dropdown.Item description="Страница о нашей компании" showFullDescription={true}  key= '1'     color={"default"}>
-                                    <Link  href="#">Домашняя страница</Link>
+                                <Dropdown.Item  className="p-0"   key= '1'     color={"default"} >
+                                    <Link className="m-0 block h-full w-full p-2" href="#" >
+                                        <Text b color="inherit" css={{ d: 'flex' }}>
+                                            Домашняя страница
+                                        </Text>
+                                    </Link>
                                 </Dropdown.Item>
 
-                                <Dropdown.Item description=" " showFullDescription={true}  key= '2'     color={"default"}>
-                                    <Link className="w-25" href="/catalog">Каталог</Link>
+                                <Dropdown.Item  className="p-0"  key= '2'     color={"default"}>
+                                    <Link  className="m-0 block h-full w-full p-2" href="/catalog">
+                                        <Text b color="inherit" css={{ d: 'flex' }}>
+                                            Каталог
+                                        </Text>
+                                    </Link>
                                 </Dropdown.Item>
 
-                                <Dropdown.Item description=" " showFullDescription={true}  key= '2'     color={"default"}>
-                                    <Link className="w-25" href="/dataProducts/5">Весь ассортимент</Link>
+                                <Dropdown.Item  className="p-0"  key= '3'   color={"default"}>
+                                    <Link  className="m-0 block h-full w-full p-2" href="/dataProducts/5">
+                                        <Text b color="inherit" css={{ d: 'flex' }}>
+                                           Весь ассортимент
+                                        </Text>
+
+                                    </Link>
                                 </Dropdown.Item>
 
-                                <Dropdown.Item description="Телефоны, адреса, почта" showFullDescription={true} key='3' color={"default"}>
-                                    <Link className="w-25" href="/contact">Контакты</Link>
+                                <Dropdown.Item   className="p-0" key='4' color={"default"}>
+                                    <Link  className="m-0 block h-full w-full p-2" href="/contact">
+                                        <Text b color="inherit" css={{ d: 'flex' }}>
+                                            Контакты
+                                        </Text>
+                                    </Link>
                                 </Dropdown.Item>
 
                         </Dropdown.Menu>
