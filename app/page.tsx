@@ -101,7 +101,7 @@ export default function Home() {
                 <p className="text-xl font-semibold mb-4">- Кислородные баллончики</p>
                 <p className="text-xl font-semibold mb-4">- и многое другое</p>
 
-                <p className="text-xl font-semibold mb-4">Можете ознакомиться с нашим товаром очень просто. Выберете желаемую операцию:</p>
+                <p className="text-xl font-semibold mb-4">Можете ознакомиться с нашими товарами:</p>
 
                 <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
                 <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
