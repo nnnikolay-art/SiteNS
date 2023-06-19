@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
                     <Dropdown >
-                        <Dropdown.Button flat className="visible  sm:invisible ">Меню</Dropdown.Button>
+                        <Dropdown.Button flat className="visible  sm:invisible ">☰</Dropdown.Button>
                         <Dropdown.Menu aria-label="Dynamic Actions" >
 
 
