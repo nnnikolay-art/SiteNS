@@ -55,7 +55,7 @@ const Navbar = () => {
 
 
 
-                    <Dropdown >
+                    <Dropdown disableAnimation={true} >
                         <Dropdown.Button flat className="visible  sm:invisible ">☰</Dropdown.Button>
                         <Dropdown.Menu aria-label="Dynamic Actions" >
 
