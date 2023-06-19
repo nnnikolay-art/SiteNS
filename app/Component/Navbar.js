@@ -37,10 +37,19 @@ const Navbar = () => {
                                 <Link href="/catalog"
                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Каталог компании</Link>
                             </li>
+
+                            <li>
+                                <Link href="/dataProducts/5"
+                                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Весь ассортимент</Link>
+                            </li>
+
                             <li>
                                 <Link href="/contact"
                                    className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Контакты</Link>
                             </li>
+
+
+
                         </ul>
                     </div>
 
@@ -51,16 +60,20 @@ const Navbar = () => {
                         <Dropdown.Menu aria-label="Dynamic Actions" >
 
 
-                                <Dropdown.Item   key= '1'     color={"default"}>
-                                    <Link href="#">Домашняя страница</Link>
+                                <Dropdown.Item description="Страница о нашей компании" showFullDescription={true}  key= '1'     color={"default"}>
+                                    <Link  href="#">Домашняя страница</Link>
                                 </Dropdown.Item>
 
-                                <Dropdown.Item  key= '2'     color={"default"}>
-                                    <Link href="/catalog">Каталог</Link>
+                                <Dropdown.Item description=" " showFullDescription={true}  key= '2'     color={"default"}>
+                                    <Link className="w-25" href="/catalog">Каталог</Link>
                                 </Dropdown.Item>
 
-                                <Dropdown.Item  key='3' color={"default"}>
-                                    <Link href="/contact">Контакты</Link>
+                                <Dropdown.Item description=" " showFullDescription={true}  key= '2'     color={"default"}>
+                                    <Link className="w-25" href="/dataProducts/5">Весь ассортимент</Link>
+                                </Dropdown.Item>
+
+                                <Dropdown.Item description="Телефоны, адреса, почта" showFullDescription={true} key='3' color={"default"}>
+                                    <Link className="w-25" href="/contact">Контакты</Link>
                                 </Dropdown.Item>
 
                         </Dropdown.Menu>
