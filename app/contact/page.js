@@ -43,12 +43,12 @@ const ContactList = () => (
                         <Image className="float-left" src={addr} alt='Адрес:' width={25} height={25}/>
                         <p className="text-gray-700 mb-1">Адрес: {address}</p>
                         <div className="columns-2">
-                            <Image className="float-left" src={PhoneIcon} alt='Телефон:' width={25} height={25}/>
-                            <Link href={"tel:"+phone} className="text-gray-700 mb-1">{phone}</Link>
+                            <Image  src={PhoneIcon} alt='Телефон:' width={25} height={25}/>
+                            <Link href={"tel:"+phone} className="text-gray-700 mb-1">Телефон: {phone}</Link>
                         </div>
                         <div className="columns-2">
-                            <Image className="float-left" src={MailIcon} alt='Email:' width={25} height={25}/>
-                            <Link href={"mailto:"+email} className="text-gray-700 mb-1">{email}</Link>
+                            <Image  src={MailIcon} alt='Email:' width={25} height={25}/>
+                            <Link href={"mailto:"+email} className="text-gray-700 mb-1">Почта: {email}</Link>
                         </div>
 
                 </div>
