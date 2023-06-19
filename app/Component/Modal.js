@@ -39,12 +39,12 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
                             aria-labelledby="modal-headline"
                         >
                             <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                                <Image src={"/ProductImg/" + itemModal.img} alt="Товар" height={250} width={250}/>
+                                <Image className="mx-auto" src={"/ProductImg/" + itemModal.img} alt="Товар" height={250} width={250}/>
                                 <p className="text-3xl text-center">{itemModal.title}</p>
                                 <p className="text-2xl  text-center border-1 border-b">{itemModal.desc}</p>
-                                {itemModal.price && <p className="text-2xl text-blue-700 bold">Продажа: {itemModal.price} р.</p>}
-                                {itemModal.priceA && <p className="text-2xl text-blue-800 bold">{itemModal.priceA}</p>}
-                                <p className="text-sm">{itemModal.longDesc}</p>
+                                {itemModal.price && <p className="text-2xl text-blue-700 bold">Продажа: {itemModal.price} ₽.</p>}
+                                {itemModal.priceA && <p className="text-2xl text-blue-800 bold border-1 border-b">Аренда: {itemModal.priceA}</p>}
+                                <p style={{whiteSpace: 'pre-line'}} className="text-sm">{itemModal.longDesc}</p>
                             </div>
 
                             <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
