@@ -4,10 +4,11 @@ import MailIcon from '../../public/Icons/envelope-solid.svg'
 import addr from '../../public/Icons/house-solid.svg'
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link"
 
 
 const contacts = [
-    { city: 'Ижевск', phone: '+7 (495) 555-55-55', email: 'moscow@example.com',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а' },
+    { city: 'Ижевск', phone: '+7 951 191-11-11', email: 'medprokat18@mail.ru',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а' },
     { city: 'Краснодар', phone: '+7 (812) 555-55-55', email: 'spb@example.com',address: 'Краснодарский край г. Краснодар ул. Леваневского, 3' },
     { city: 'Екатеринбург', phone: '+380 44 555-55-55', email: 'kiev@example.com',address: 'Свердловская обл. г. Екатеринбург ул. Степена разина 122' },
 ];
@@ -42,7 +43,7 @@ const ContactList = () => (
                         <Image className="float-left" src={addr} alt='Адрес:' width={25} height={25}/>
                         <p className="text-gray-700 mb-1">Адрес: {address}</p>
                         <Image className="float-left" src={PhoneIcon} alt='Телефон:' width={25} height={25}/>
-                        <p className="text-gray-700 mb-1">Телефон: {phone}</p>
+                        <Link className="text-gray-700 mb-1">Телефон: {phone}</Link>
                         <Image className="float-left" src={MailIcon} alt='Email:' width={25} height={25}/>
                         <p className="text-gray-700">Email: {email}</p>
                 </div>
