@@ -24,11 +24,11 @@ const ContactList = () => (
             <title>
                 Контакты компании
             </title>
-            <meta>
-                name="Контакты компании"
-                content="Контакты компании: Телефон, адрес, почта"
-                key="contact"
-            </meta>
+            <meta
+                name= "Контакты компании"
+                content= "Контакты компании: Телефон, адрес, почта"
+                key= "contact"
+            />
         </Head>
 
         <div className="max-w-2xl mx-auto">
