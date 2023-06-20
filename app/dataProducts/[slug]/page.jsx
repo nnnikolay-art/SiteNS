@@ -629,7 +629,7 @@ const Search = () => {
                     'Многоразовый пузырьковый увлажнитель подходит к следующим моделям кислородных концентраторов:\n' +
                     '\n' +
                     'BITMOS OXY 6000 (6 L)\n' +
-                    'NIDEK Mark 5 Nuvo Lite\n' +
+                    'NIDEK Mark 5 Nuvo Lite \n' +
                     'NIDEK Mark 5 Nuvo 8\n' +
                     'Philips Respironics EverFlo\n' +
                     'Invacare PerfectO2\n' +
@@ -803,10 +803,10 @@ const Search = () => {
         <div className="flex flex-col px-4 py-6 mx-auto   ">
             <Head>
                 <title>
-                    Товары компании
+                    Товары компании. Католог. Поиск по названию, категории и городу
                 </title>
                 <meta
-                    name="товары компании"
+                    name="Товары компании. Католог. Поиск по названию, категории и городу"
                     content="Товары компании, поиск товара по названию, категории"
                     key="contact"
                 />

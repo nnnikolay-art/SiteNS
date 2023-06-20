@@ -14,7 +14,7 @@ const contacts = [
 ];
 
 export const metadata = {
-    title: 'Контакты компании',
+    title: 'Контакты компании ЦентрМедПрокат',
     description: 'Контакты, телефоны, адреса компании',
 }
 
@@ -24,11 +24,11 @@ const ContactList = () => (
             <title>
                 Контакты компании
             </title>
-            <meta
+            <meta>
                 name="Контакты компании"
                 content="Контакты компании: Телефон, адрес, почта"
                 key="contact"
-            />
+            </meta>
         </Head>
 
         <div className="max-w-2xl mx-auto">
