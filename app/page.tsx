@@ -3,6 +3,7 @@ import Navbar from '@/app/Component/Navbar'
 import logo from '../public/2.jpg'
 import Link from 'next/link'
 import Head from "next/head";
+import React from "react";
 
 export default function Home() {
   return (
@@ -17,10 +18,7 @@ export default function Home() {
             <title>
                 ЦентрМедПрокат. Средства реаблитации в аренду и продажу
             </title>
-            <meta
-                name="ЦентрМедПрокат. Средства реаблитации в аренду и продажу"
-                key="desc"
-            />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         </Head>
 
 

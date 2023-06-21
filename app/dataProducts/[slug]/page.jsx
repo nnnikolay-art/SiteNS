@@ -805,11 +805,7 @@ const Search = () => {
                 <title>
                     Товары компании. Католог. Поиск по названию, категории и городу
                 </title>
-                <meta
-                    name="Товары компании. Католог. Поиск по названию, категории и городу"
-                    content="Товары компании, поиск товара по названию, категории"
-                    key="contact"
-                />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
             </Head>
 
 

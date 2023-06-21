@@ -25,8 +25,8 @@ const ContactList = () => (
                 Контакты компании
             </title>
             <meta
-                name= "Контакты компании"
-                content= "Контакты компании: Телефон, адрес, почта"
+                http-equiv="Content-Type"
+                content="text/html; charset=utf-8"
                 key= "contact"
             />
         </Head>
