@@ -7,13 +7,18 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main>
+        <head>
+            <meta
+                name="yandex-verification"
+                content="f21e4eb3c6dc3921"
+            />
+        </head>
         <Head>
             <title>
                 ЦентрМедПрокат. Средства реаблитации в аренду и продажу
             </title>
             <meta
-                name="yandex-verification"
-                content="f21e4eb3c6dc3921"
+                name="ЦентрМедПрокат. Средства реаблитации в аренду и продажу"
                 key="desc"
             />
         </Head>
