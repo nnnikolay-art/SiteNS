@@ -6,6 +6,8 @@ import Head from "next/head";
 import React from "react";
 
 export default function Home() {
+    localStorage.theme = 'light';
+
   return (
     <main>
         <head>
