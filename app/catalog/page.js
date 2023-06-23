@@ -59,7 +59,7 @@ const Page = () => {
             </div>
             <div className="relative z-10 ">
                 <div className="max-w-2xl mx-auto">
-                    <h2 className="text-center text-3xl font-bold mb-10">Категории товаров</h2>
+                    <h2 className="text-center text-black text-3xl font-bold mb-10">Категории товаров</h2>
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-6 flex-col">
                         {categories.map(({ id, name, imageUrl,desc,categorySlug }) => (
                             <Link
@@ -72,7 +72,7 @@ const Page = () => {
 
 
                                            />
-                                <div className='text-center font-bold'>{name}</div>
+                                <div className='text-center font-bold text-black'>{name}</div>
                                 <div className='text-cyan-700 text-center'>{desc}</div>
 
                             </Link>
