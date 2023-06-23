@@ -98,8 +98,8 @@ export default function Home() {
                             <p className="text-xl font-semibold mb-4">Екатеринбург</p>
                     </div>
                 </div>
-
-                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
+                <div className="text-xl text-black font-semibold mb-4">
+                <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
                 <p className="text-xl font-semibold mb-4">- Костыли, ходунки, трости</p>
                 <p className="text-xl font-semibold mb-4">- Пульсоксиметры</p>
                 <p className="text-xl font-semibold mb-4">- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
@@ -110,8 +110,8 @@ export default function Home() {
                 <p className="text-xl font-semibold mb-4">- Кислородные баллончики</p>
                 <p className="text-xl font-semibold mb-4">- и многое другое</p>
 
-                <p className="text-xl font-semibold mb-4">Можете ознакомиться с нашими товарами:</p>
-
+                <p >Можете ознакомиться с нашими товарами:</p>
+                </div>
                 <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
                 <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
 
