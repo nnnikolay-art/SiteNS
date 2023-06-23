@@ -52,7 +52,7 @@ export default function Home() {
               <h2 className="text-2xl text-black  lg:text-3xl font-semibold mb-8">Наши преимущества</h2>
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Высокое качество товаров</h3>
                     <p className="text-gray-200 leading-relaxed">Мы предоставляем качественные товары у известных мировых брендов.</p>
                   </div>
@@ -64,7 +64,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Индивидуальный подход к каждому клиенту</h3>
                     <p className="text-gray-200 leading-relaxed">Мы ищем индивидуальный подход к каждому клиенту, учитывая его индивидуальные потребности и цели.</p>
                   </div>
@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Широкий ассортимент товаров</h3>
                     <p className="text-gray-200 leading-relaxed">Мы стараемся удовлетворить любые потребности наших клиентов</p>
                   </div>
@@ -100,20 +100,20 @@ export default function Home() {
                 </div>
                 <div className="text-xl text-black font-semibold mb-4">
                 <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
-                <p className="text-xl font-semibold mb-4">- Костыли, ходунки, трости</p>
-                <p className="text-xl font-semibold mb-4">- Пульсоксиметры</p>
-                <p className="text-xl font-semibold mb-4">- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
-                <p className="text-xl font-semibold mb-4">- СИПАП аппараты</p>
-                <p className="text-xl font-semibold mb-4">- Алмаг</p>
-                <p className="text-xl font-semibold mb-4">- Специальные кресла, матрасы</p>
-                <p className="text-xl font-semibold mb-4">- Комплектующие</p>
-                <p className="text-xl font-semibold mb-4">- Кислородные баллончики</p>
-                <p className="text-xl font-semibold mb-4">- и многое другое</p>
+                <p> Костыли, ходунки, трости</p>
+                <p>- Пульсоксиметры</p>
+                <p>- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
+                <p>- СИПАП аппараты</p>
+                <p>- Алмаг</p>
+                <p>- Специальные кресла, матрасы</p>
+                <p>- Комплектующие</p>
+                <p>- Кислородные баллончики</p>
+                <p >- и многое другое</p>
 
                 <p >Можете ознакомиться с нашими товарами:</p>
                 </div>
-                <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
-                <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
+                <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
+                <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
 
             </div>
 
