@@ -800,7 +800,7 @@ const Search = () => {
     });
 
     return (
-        <div className="flex flex-col px-4 py-6 mx-auto   ">
+        <div className="flex flex-col px-4 py-6 mx-auto bg-gray-50 text-black   ">
             <Head>
                 <title>
                     Товары компании. Католог. Поиск по названию, категории и городу
@@ -809,7 +809,7 @@ const Search = () => {
             </Head>
 
 
-            <h1 className="text-center text-3xl font-bold mb-4">Товарный ассортимент</h1>
+            <h1 className="text-center  text-3xl font-bold mb-4">Товарный ассортимент</h1>
 
             {/* Search input */}
             <div className="mb-1">
