@@ -4,6 +4,7 @@ import Link from 'next/link';
 import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
+import { YMInitializer } from 'react-yandex-metrika';
 
 const Navbar = () => {
     const menuItems = [
@@ -15,9 +16,7 @@ const Navbar = () => {
 
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full">
-
-
-
+            <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
 
             <nav className="bg-white border-gray-200 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
