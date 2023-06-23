@@ -6,7 +6,7 @@ import Head from "next/head";
 import React from "react";
 
 export default function Home() {
-    localStorage.theme = 'light';
+
 
   return (
     <main>
@@ -17,6 +17,10 @@ export default function Home() {
             />
         </head>
         <Head>
+
+
+
+
             <title>
                 ЦентрМедПрокат. Средства реаблитации в аренду и продажу
             </title>
