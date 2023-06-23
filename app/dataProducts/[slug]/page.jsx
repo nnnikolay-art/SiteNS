@@ -819,7 +819,7 @@ const Search = () => {
                 <input
                     type="text"
                     placeholder="Поиск по названию товара"
-                    className="w-full rounded-lg border-blue-700 px-2 py-1"
+                    className="w-full rounded-lg border-gray-500 border px-2 py-1"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -832,7 +832,7 @@ const Search = () => {
                 </label>
                 <select
                     id="category"
-                    className="w-full rounded-lg border-gray-300 px-2 py-1"
+                    className="w-full rounded-lg border-gray-500 border px-2 py-1"
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
                 >
@@ -851,7 +851,7 @@ const Search = () => {
                 </label>
                 <select
                     id="city"
-                    className="w-full rounded-lg border-blue-700 border-2 px-2 py-1"
+                    className="w-full rounded-lg border-gray-500 border px-2 py-1"
                     value={selectedCity}
                     onChange={(e) => setSelectedCity(e.target.value)}
                 >
