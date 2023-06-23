@@ -58,7 +58,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200 py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-gray-200 text-black py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Команда опытных специалистов</h3>
                     <p className="text-gray-600 leading-relaxed">Наша команда состоит из опытных и высококвалифицированных специалистов, которые готовы помочь вам в любых вопросах.</p>
                   </div>
@@ -70,7 +70,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200  py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Гибкая ценовая политика</h3>
                     <p className="text-gray-600 leading-relaxed">Оптимальное соотношение цены и качества на рынке.</p>
                   </div>
@@ -83,23 +83,23 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200 e py-10 px-8 rounded-lg shadow-lg">
+                  <div className="bg-gray-200 text-black e py-10 px-8 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold mb-4">Работаем круглосуточно</h3>
                     <p className="text-gray-600  leading-relaxed">Для наших клиентов мы работаем круглые сутки без выходных и обеда</p>
                   </div>
                 </div>
               </div>
 
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Работаем в городах</h2>
+                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8">Работаем в городах</h2>
                 <div className='columns-1'>
-                    <div className="w-full  px-4 mb-8">
+                    <div className="w-full text-black  px-4 mb-8">
                             <p className="text-xl font-semibold mb-4">Ижевск</p>
                             <p className="text-xl font-semibold mb-4">Краснодар</p>
                             <p className="text-xl font-semibold mb-4">Екатеринбург</p>
                     </div>
                 </div>
 
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
+                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
                 <p className="text-xl font-semibold mb-4">- Костыли, ходунки, трости</p>
                 <p className="text-xl font-semibold mb-4">- Пульсоксиметры</p>
                 <p className="text-xl font-semibold mb-4">- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
