@@ -26,10 +26,10 @@ export default function RootLayout({
 
       {children}
       </body>
-      <div className="text-center">
-      <p className="font-bold text-1xl">ИП Жук Никита Анатольевич</p>
-      <p>ИНН: 183313423733, ОГРН: 32183200005883</p>
-      <p className="font-bold" >Имеются противопоказания необходима консультация специалиста </p>
+      <div className="text-center bg-gray-100 text-black">
+          <p className="font-bold text-1xl">ИП Жук Никита Анатольевич</p>
+          <p>ИНН: 183313423733, ОГРН: 32183200005883</p>
+          <p className="font-bold" >Имеются противопоказания необходима консультация специалиста </p>
       </div>
     </html>
   )
