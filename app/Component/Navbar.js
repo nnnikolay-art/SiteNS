@@ -97,6 +97,14 @@ const Navbar = () => {
                                     </Link>
                                 </Dropdown.Item>
 
+                            <Dropdown.Item   className="p-0" key='4' color={"default"}>
+                                <Link  className="m-0 block h-full w-full p-2" href="https://yandex.ru/business/widget/request/company/14408664021">
+                                    <Text b color="inherit" css={{ d: 'flex' }}>
+                                        Обратный звонок
+                                    </Text>
+                                </Link>
+                            </Dropdown.Item>
+
                         </Dropdown.Menu>
                     </Dropdown>
 
