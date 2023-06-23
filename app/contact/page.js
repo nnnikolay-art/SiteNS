@@ -32,7 +32,7 @@ const ContactList = () => (
         </Head>
 
         <div className="max-w-2xl mx-auto bg-gray-50">
-            <h2 className="text-center text-3xl font-bold mb-10">Список контактов</h2>
+            <h2 className="text-center text-black text-3xl font-bold mb-10">Список контактов</h2>
             {contacts.map(({ city, phone, email ,address}) => (
                 <div key={city} className="bg-gray-200 shadow-lg rounded-lg p-6 mb-6   ">
                     <div className="divide-y divide-gray-300 divide-x-reverse">
