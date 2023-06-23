@@ -37,10 +37,10 @@ export default function Home() {
                  fill/>
         </div>
       <div className="relative z-10 ">
-          <h1 className="text-blue-900 text-3xl font-semibold text-center">О компании</h1>
+          <h1 className="text-blue-900 text-black  text-3xl font-semibold text-center">О компании</h1>
 
 
-            <div className="container font-semibold  mx-auto px-4">
+            <div className="container text-black  font-semibold  mx-auto px-4">
                 <p className="text-2xl text-center ">Добро пожаловать в нашу компанию ЦентрМедПрокат!</p>
                 <p>Предлагаем широкий выбор медицинского оборудования для аренды и продажи технических средств реаблитации</p>
 
@@ -48,8 +48,8 @@ export default function Home() {
               </div>
 
 
-            <div className="container mx-auto px-4">
-              <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наши преимущества</h2>
+            <div className="container  mx-auto px-4">
+              <h2 className="text-2xl text-black  lg:text-3xl font-semibold mb-8">Наши преимущества</h2>
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full md:w-1/2 px-4 mb-8">
                   <div className="bg-blue-500 text-white py-10 px-8 rounded-lg shadow-lg">
