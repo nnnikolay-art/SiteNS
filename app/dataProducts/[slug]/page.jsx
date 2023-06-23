@@ -851,7 +851,7 @@ const Search = () => {
                 </label>
                 <select
                     id="city"
-                    className="w-full rounded-lg border-gray-300 border-2 px-2 py-1"
+                    className="w-full rounded-lg border-blue-700 border-2 px-2 py-1"
                     value={selectedCity}
                     onChange={(e) => setSelectedCity(e.target.value)}
                 >
