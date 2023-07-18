@@ -1,5 +1,16 @@
 import Image from 'next/image'
 import Navbar from '@/app/Component/Navbar'
+import pict24 from '../public/pngwing.com.png'
+import freeTalking from '../public/FreeTalking.png'
+import lowCost from '../public/LowCost.png'
+
+import izhevskCity from '../public/Izhevsk.png'
+import KrasnodarCity from '../public/Krasnodar.png'
+import EkaterCity from '../public/Ekaterenburg.png'
+
+import CategoryBtn from '../public/CategoryButton.png'
+import ListBtn from '../public/ListButton.png'
+
 import logo from '../public/2.jpg'
 import Link from 'next/link'
 import Head from "next/head";
@@ -34,6 +45,7 @@ export default function Home() {
                  src={logo}
                  alt='Логотип'
                  className='sm:blur-none blur'
+                 h-full
                  fill/>
         </div>
       <div className="relative z-10 ">
@@ -41,79 +53,77 @@ export default function Home() {
 
 
             <div className="container text-black  font-semibold  mx-auto px-4">
-                <p className="text-2xl text-center ">Добро пожаловать в нашу компанию ЦентрМедПрокат!</p>
-                <p>Предлагаем широкий выбор медицинского оборудования для аренды и продажи технических средств реаблитации</p>
+                <p className="text-2xl text-black text-center  ">Добро пожаловать в нашу компанию ЦентрМедПрокат!</p>
+                <p>Предлагаем широкий выбор медицинского оборудования для аренды и продажи:</p>
 
-
-              </div>
-
-
-            <div className="container  mx-auto px-4">
-              <h2 className="text-2xl text-black  lg:text-3xl font-semibold mb-8">Наши преимущества</h2>
-              <div className="flex flex-wrap -mx-4">
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Высокое качество товаров</h3>
-                    <p className="text-gray-200 leading-relaxed">Мы предоставляем качественные товары у известных мировых брендов.</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200 text-black py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Команда опытных специалистов</h3>
-                    <p className="text-gray-600 leading-relaxed">Наша команда состоит из опытных и высококвалифицированных специалистов, которые готовы помочь вам в любых вопросах.</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Индивидуальный подход к каждому клиенту</h3>
-                    <p className="text-gray-200 leading-relaxed">Мы ищем индивидуальный подход к каждому клиенту, учитывая его индивидуальные потребности и цели.</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Гибкая ценовая политика</h3>
-                    <p className="text-gray-600 leading-relaxed">Оптимальное соотношение цены и качества на рынке.</p>
-                  </div>
+                <div className="text-black font-semibold mb-4">
+                    <p> ✔Технических средств реаблитации: Костыли, ходунки, трости</p>
+                    <p> ✔Приборов: Пульсоксиметры, Кислородные концентраторы(3,5,10 литров\мин.), СИПАП аппараты, Алмаг</p>
+                    <p> ✔Специальные кресла, противопролежневые матрасы</p>
+                    <p> ✔Различные комплектующие к средствам реабилитации</p>
+                    <p> ✔Кислородные баллончики</p>
+                    <p> ✔и многое другое</p>
                 </div>
 
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-blue-600 text-white py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Широкий ассортимент товаров</h3>
-                    <p className="text-gray-200 leading-relaxed">Мы стараемся удовлетворить любые потребности наших клиентов</p>
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 px-4 mb-8">
-                  <div className="bg-gray-200 text-black e py-10 px-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold mb-4">Работаем круглосуточно</h3>
-                    <p className="text-gray-600  leading-relaxed">Для наших клиентов мы работаем круглые сутки без выходных и обеда</p>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div className="container mx-auto px-4 mb-4">
 
-                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8">Работаем в городах</h2>
-                <div className='columns-1'>
-                    <div className="w-full text-black  px-4 mb-8">
-                            <p className="text-xl font-semibold mb-4">Ижевск</p>
-                            <p className="text-xl font-semibold mb-4">Краснодар</p>
-                            <p className="text-xl font-semibold mb-4">Екатеринбург</p>
+
+                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Нажмите на свой город:</h2>
+                <div className='columns-1 mb-2'>
+                    <div className="w-full text-black px-4 mb-8 sm:columns-3 columns-1 ">
+                            <Link href="dataProducts/Izhevsk" className="text-xl font-semibold mb-4 mx-1  ">
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={izhevskCity} width="200" height="200"></Image>
+                                <p className="text-2xl">Ижевск</p>
+                            </Link><br></br>
+                            <Link href="dataProducts/Krasnodar" className="text-xl font-semibold mb-4 mx-1">
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={KrasnodarCity} width="200" height="200"></Image>
+                                <p className="text-2xl">Краснодар</p>
+                            </Link><br></br>
+                            <Link href="dataProducts/Ekaterinburg" className="text-xl font-semibold mb-4 mx-1">
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="200" height="200"></Image>
+                                <p className="text-2xl">Екатеринбург</p>
+                            </Link><br></br>
                     </div>
                 </div>
-                <div className="text-xl text-black font-semibold mb-4">
-                <h2 className="text-2xl lg:text-3xl font-semibold mb-8">Наш ассортимент</h2>
-                <p> Костыли, ходунки, трости</p>
-                <p>- Пульсоксиметры</p>
-                <p>- Кислородные концентраторы с производительностью 3,5,10 литров \ мин.</p>
-                <p>- СИПАП аппараты</p>
-                <p>- Алмаг</p>
-                <p>- Специальные кресла, матрасы</p>
-                <p>- Комплектующие</p>
-                <p>- Кислородные баллончики</p>
-                <p >- и многое другое</p>
 
-                <p >Можете ознакомиться с нашими товарами:</p>
+                <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Нажмите на предпочитаемый способ поиска товара:</h2>
+                <Link href='catalog' className="ml-5 mt-5 inline-block font-bold py-2 px-4 rounded transition-all duration-200 hover:scale-125 ">
+                    <Image className="rounded-lg" src={CategoryBtn} width="150" height="150"></Image>
+                    <p>Поиск товара по категории</p>
+                </Link>
+
+                <Link href='dataProducts/99' className="ml-5  mt-5 inline-block  font-bold py-2 px-4 rounded transition-all duration-200 hover:scale-125 ">
+                    <Image className="rounded-lg" src={ListBtn} width="150" height="150"></Image>
+                    <p>Показать весь ассортимент товара</p>
+                </Link>
+
+                <h2 className="text-2xl text-black lg:text-3xl font-semibold">Преимущества компании:</h2>
+                <div className="flex flex-wrap -mx-4">
+
+                    <div className="w-full md:w-1/3 mb-8">
+                        <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
+                            <h3 className="text-xl font-semibold mb-4">Бесплатная консультация</h3>
+
+                            <Image src={freeTalking} width="150" height="150"></Image>
+                        </div>
+                    </div>
+
+
+                    <div className="w-full md:w-1/3 px-4 mb-8">
+                        <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
+                            <h3 className="text-xl font-semibold mb-4">Работаем круглосуточно</h3>
+                            <Image src={pict24} width="150" height="150"></Image>
+                        </div>
+                    </div>
+
+                    <div className="w-full md:w-1/3 px-4 mb-8">
+                        <div className="bg-gray-200 text-black py-10 px-8 rounded-lg shadow-lg">
+                            <h3 className="text-xl font-semibold mb-4">Можно взять товар в аренду</h3>
+                            <Image src={lowCost} width="150" height="150"></Image>
+                        </div>
+                    </div>
                 </div>
-                <Link href='catalog' className="ml-5 mt-5 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Поиск товара по категории</Link>
-                <Link href='dataProducts/5' className="ml-5  mt-5 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Показать весь ассортимент товара</Link>
 
             </div>
 

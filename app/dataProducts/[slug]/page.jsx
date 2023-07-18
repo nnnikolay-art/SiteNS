@@ -29,10 +29,16 @@ const Search = () => {
         {
             setSelectedCategory(exCategory);
         }
+        if (exCity)
+        {
+            setSelectedCity(exCity)
+        }
     },[])
 
 
     let exCategory = '';
+    let exCity ='';
+
     if (param.slug == 1)
     {
         exCategory = 'Кислородные концентраторы';
@@ -58,6 +64,20 @@ const Search = () => {
     {
         exCategory = 'Кровати';
         console.log('K')
+    }
+
+    if (param.slug == 'Izhevsk')
+    {
+        exCity = 'Izhevsk';
+    }
+    if (param.slug == 'Ekaterinburg')
+    {
+        exCity = 'Ekat';
+    }
+
+    if (param.slug == 'Krasnodar')
+    {
+        exCity = 'Krasnodar';
     }
 
 
