@@ -908,7 +908,7 @@ const Search = () => {
             {
                 id: 41,
                 title: 'Подъемное приспособление в кровать PB-01',
-                img: 'KresloOtto.jpg',
+                img: 'bed-solid.svg',
                 desc: 'Кровать с электроприводом',
                 longDesc:
                     'Специальное подъемное приспособление в кровать с электроприводом\n'+
@@ -1009,7 +1009,7 @@ const Search = () => {
                     <option value="Средства реабилитации">Средства реабилитации</option>
                     <option value="Комплектующие">Комплектующие</option>
                     <option value="Приборы">Приборы</option>
-                    <option value="Кровати">Приборы</option>
+                    <option value="Кровати">Кровати</option>
                 </select>
             </div>
 
