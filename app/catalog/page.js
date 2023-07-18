@@ -35,6 +35,13 @@ const categories = [
         imageUrl: '/Icons/wheelchair-solid.svg',
         desc: 'Ходунки, Трости, Костыли, Кресла, Кровати для людей с дополнительными потребностями',
         categorySlug: '/dataProducts/2'
+    }    ,
+    {
+        id: 5,
+        name: 'Специальные кровати',
+        imageUrl: '/Icons/bed-solid.svg',
+        desc: 'Специальные кровати, Противопролежневые матрасы и тд. ',
+        categorySlug: '/dataProducts/5'
     }
 ];
 
@@ -68,12 +75,12 @@ const Page = () => {
                                 className="bg-blue-200 shadow-lg rounded-lg p-6 flex flex-col items-center transition-all duration-200 hover:scale-105"
                             >
                                 <Image src={imageUrl} alt={name} width={100} height={100}
-                                       className="w-24 h-24 mb-4"
+                                       className="sm:w-24 sm:h-24 sm:mb-4 w-10 h-10 mb-2"
 
 
                                            />
                                 <div className='text-center font-bold text-black'>{name}</div>
-                                <div className='text-cyan-700 text-center'>{desc}</div>
+                                <div className='text-cyan-700 text-center '>{desc}</div>
 
                             </Link>
                         ))}
