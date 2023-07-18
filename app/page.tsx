@@ -105,7 +105,7 @@ export default function Home() {
                         <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold mb-4">Бесплатная консультация</h3>
 
-                            <Image src={freeTalking} width="150" height="150"></Image>
+                            <Image src={freeTalking} width="150" height="150" alt="Бесплатная консультация"></Image>
                         </div>
                     </div>
 
@@ -113,14 +113,14 @@ export default function Home() {
                     <div className="w-full md:w-1/3 px-4 mb-8">
                         <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold mb-4">Работаем круглосуточно</h3>
-                            <Image src={pict24} width="150" height="150"></Image>
+                            <Image src={pict24} width="150" height="150" alt="Работаем круглосуточно"></Image>
                         </div>
                     </div>
 
                     <div className="w-full md:w-1/3 px-4 mb-8">
                         <div className="bg-gray-200 text-black py-10 px-8 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold mb-4">Можно взять товар в аренду</h3>
-                            <Image src={lowCost} width="150" height="150"></Image>
+                            <Image src={lowCost} width="150" height="150" alt="Можно взять товар в аренду"></Image>
                         </div>
                     </div>
                 </div>
