@@ -73,15 +73,15 @@ export default function Home() {
                 <div className='columns-1 mb-2'>
                     <div className="w-full text-black px-4 mb-8 sm:columns-3 columns-1 ">
                             <Link href="dataProducts/Izhevsk" className="text-xl font-semibold mb-4 mx-1  ">
-                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={izhevskCity} width="200" height="200"></Image>
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={izhevskCity} width="200" height="200" alt="izh"></Image>
                                 <p className="text-2xl">Ижевск</p>
                             </Link><br></br>
                             <Link href="dataProducts/Krasnodar" className="text-xl font-semibold mb-4 mx-1">
-                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={KrasnodarCity} width="200" height="200"></Image>
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={KrasnodarCity} width="200" height="200" alt="Krasnodar"></Image>
                                 <p className="text-2xl">Краснодар</p>
                             </Link><br></br>
                             <Link href="dataProducts/Ekaterinburg" className="text-xl font-semibold mb-4 mx-1">
-                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="200" height="200"></Image>
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="200" height="200"  alt="ekatenburg></Image>
                                 <p className="text-2xl">Екатеринбург</p>
                             </Link><br></br>
                     </div>
@@ -89,12 +89,12 @@ export default function Home() {
 
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Нажмите на предпочитаемый способ поиска товара:</h2>
                 <Link href='catalog' className="ml-5 mt-5 inline-block font-bold py-2 px-4 rounded transition-all duration-200 hover:scale-125 ">
-                    <Image className="rounded-lg" src={CategoryBtn} width="150" height="150"></Image>
+                    <Image className="rounded-lg" src={CategoryBtn} width="150" height="150" alt="category"></Image>
                     <p>Поиск товара по категории</p>
                 </Link>
 
                 <Link href='dataProducts/99' className="ml-5  mt-5 inline-block  font-bold py-2 px-4 rounded transition-all duration-200 hover:scale-125 ">
-                    <Image className="rounded-lg" src={ListBtn} width="150" height="150"></Image>
+                    <Image className="rounded-lg" src={ListBtn} width="150" height="150" alt="assortiment"></Image>
                     <p>Показать весь ассортимент товара</p>
                 </Link>
 
