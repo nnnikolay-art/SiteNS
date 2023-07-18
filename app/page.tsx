@@ -81,7 +81,7 @@ export default function Home() {
                                 <p className="text-2xl">Краснодар</p>
                             </Link><br></br>
                             <Link href="dataProducts/Ekaterinburg" className="text-xl font-semibold mb-4 mx-1">
-                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="200" height="200"  alt="ekatenburg></Image>
+                                <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="200" height="200"  alt="ekatenburg"></Image>
                                 <p className="text-2xl">Екатеринбург</p>
                             </Link><br></br>
                     </div>
