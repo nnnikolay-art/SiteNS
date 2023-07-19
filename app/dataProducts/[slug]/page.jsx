@@ -1050,7 +1050,7 @@ const Search = () => {
                     '40-44'
                 ,
                 category: 'Кровати',
-                price: '14 990',
+                price: '124 990',
                 city:'Krasnodar'
             },
             {
@@ -1124,7 +1124,7 @@ const Search = () => {
                     '40-44'
                 ,
                 category: 'Кровати',
-                price: '14 990',
+                price: '124 990',
                 city:'Izhevsk'
             },
             {
@@ -1198,7 +1198,7 @@ const Search = () => {
                     '40-44'
                 ,
                 category: 'Кровати',
-                price: '14 990',
+                price: '124 990',
                 city:'Ekat'
             }
 
