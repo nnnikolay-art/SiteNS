@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -44,17 +45,52 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
                                 <p className="text-2xl  text-center border-1 border-b">{itemModal.desc}</p>
                                 {itemModal.price && <p className="text-2xl text-blue-700 bold">Продажа: {itemModal.price} ₽.</p>}
                                 {itemModal.priceA && <p className="text-2xl text-blue-800 bold border-1 border-b">Аренда: {itemModal.priceA}</p>}
+
                                 <p style={{whiteSpace: 'pre-line'}} className="text-sm">{itemModal.longDesc}</p>
                             </div>
 
                             <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                                 <button
                                     type="button"
-                                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
                                     onClick={handleClose}
                                 >
                                     Закрыть
                                 </button>
+                                <Link
+                                    href=   {
+                                    (() => {
+                                        switch(itemModal.city) {
+                                            case "Izhevsk":
+                                                return "tel:+7 951 191-11-11";
+                                            case "Ekat":
+                                                return "tel:+7 982 796-66-66";
+                                            case "Krasnodar":
+                                                return "tel:+7 906 818-39-36";
+                                        }
+                                    }
+                                    )
+                                    ()
+                                }
+
+
+                                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                >
+                                    {
+                                        (() => {
+                                                switch(itemModal.city) {
+                                                    case "Izhevsk":
+                                                        return "Позвонить: +7 951 191-11-11";
+                                                    case "Ekat":
+                                                        return "Позвонить: +7 982 796-66-66";
+                                                    case "Krasnodar":
+                                                        return "Позвонить: +7 906 818-39-36";
+                                                }
+                                            }
+                                        )
+                                        ()
+                                    }
+                                </Link>
                             </div>
                         </div>
                     </div>
