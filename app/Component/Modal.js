@@ -64,7 +64,7 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
                                             case "Izhevsk":
                                                 return "tel:+7 951 191-11-11";
                                             case "Ekat":
-                                                return "tel:+7 982 796-66-66";
+                                                return "tel:+7 951 191-11-11";
                                             case "Krasnodar":
                                                 return "tel:+7 906 818-39-36";
                                         }
@@ -82,7 +82,7 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
                                                     case "Izhevsk":
                                                         return "Позвонить: +7 951 191-11-11";
                                                     case "Ekat":
-                                                        return "Позвонить: +7 982 796-66-66";
+                                                        return "Позвонить: +7 951 191-11-11";
                                                     case "Krasnodar":
                                                         return "Позвонить: +7 906 818-39-36";
                                                 }
