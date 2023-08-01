@@ -81,7 +81,7 @@ const Navbar = () => {
                                 </Dropdown.Item>
 
                                 <Dropdown.Item  className="p-0"  key= '3'   color={"default"}>
-                                    <Link  className="m-0 block h-full w-full p-2" href="/dataProducts/99 rel="canonical"">
+                                    <Link  className="m-0 block h-full w-full p-2" href="/dataProducts/99" rel="canonical">
                                         <Text b color="inherit" css={{ d: 'flex' }}>
                                            Весь ассортимент
                                         </Text>
@@ -90,7 +90,7 @@ const Navbar = () => {
                                 </Dropdown.Item>
 
                                 <Dropdown.Item   className="p-0" key='4' color={"default"}>
-                                    <Link  className="m-0 block h-full w-full p-2" href="/contact rel="canonical"">
+                                    <Link  className="m-0 block h-full w-full p-2" href="/contact" rel="canonical">
                                         <Text b color="inherit" css={{ d: 'flex' }}>
                                             Контакты
                                         </Text>
