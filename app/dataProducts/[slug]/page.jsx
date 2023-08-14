@@ -1341,7 +1341,7 @@ const Search = () => {
                 price: '',
                 priceA: '',
                 city:'Krasnodar'
-            }
+            },
             {
                 id: 54,
                 title: 'Ortonica XS305',
