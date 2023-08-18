@@ -3,6 +3,7 @@ import Navbar from '@/app/Component/Navbar'
 import pict24 from '../public/pngwing.com.png'
 import freeTalking from '../public/FreeTalking.png'
 import lowCost from '../public/LowCost.png'
+import moneyTime from '../public/money_clock.svg'
 
 import izhevskCity from '../public/Izhevsk.png'
 import KrasnodarCity from '../public/Krasnodar.png'
@@ -10,6 +11,8 @@ import EkaterCity from '../public/Ekaterenburg.png'
 
 import CategoryBtn from '../public/CategoryButton.png'
 import ListBtn from '../public/ListButton.png'
+
+
 
 import logo from '../public/2.jpg'
 import Link from 'next/link'
@@ -101,28 +104,37 @@ export default function Home() {
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold">Преимущества компании:</h2>
                 <div className="flex flex-wrap -mx-4">
 
-                    <div className="w-full md:w-1/3 mb-8">
-                        <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
+                    <div className="w-full md:w-1/4 mb-8">
+                        <div className="bg-gray-200 text-center  text-black  py-1 px-1 rounded-lg shadow-lg">
                             <h3 className="text-xl font-semibold mb-4">Бесплатная консультация</h3>
 
-                            <Image src={freeTalking} width="150" height="150" alt="Бесплатная консультация"></Image>
+                            <Image src={freeTalking} className="mx-auto" width="120" height="120" alt="Бесплатная консультация"></Image>
                         </div>
                     </div>
 
 
-                    <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="bg-gray-200 text-black  py-10 px-8 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold mb-4">Работаем круглосуточно</h3>
-                            <Image src={pict24} width="150" height="150" alt="Работаем круглосуточно"></Image>
+                    <div className="w-full md:w-1/4 px-4 mb-8">
+                        <div className="bg-gray-200 text-black py-1 px-1  rounded-lg shadow-lg">
+                            <h3 className="text-xl text-center  font-semibold mb-4">Работаем круглосуточно</h3>
+                            <Image src={pict24} className="mx-auto" width="150" height="150" alt="Работаем круглосуточно"></Image>
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/3 px-4 mb-8">
-                        <div className="bg-gray-200 text-black py-10 px-8 rounded-lg shadow-lg">
-                            <h3 className="text-xl font-semibold mb-4">Можно взять товар в аренду</h3>
-                            <Image src={lowCost} width="150" height="150" alt="Можно взять товар в аренду"></Image>
+                    <div className="w-full md:w-1/4 px-4 mb-8">
+                        <div className="bg-gray-200 text-black py-1 px-1  rounded-lg shadow-lg">
+                            <h3 className="text-xl text-center  font-semibold mb-4">Можно взять товар в аренду</h3>
+                            <Image src={lowCost} className="mx-auto" width="150" height="150" alt="Можно взять товар в аренду"></Image>
                         </div>
                     </div>
+
+                    <div className="w-full md:w-1/4 px-4 mb-8">
+                        <div className="bg-gray-200  items-center py-1 px-1  text-black rounded-lg shadow-lg">
+                            <h3 className="text-xl text-center font-semibold mb-4">Возможно взять товар в рассрочку</h3>
+                            <Image src={moneyTime} className="mx-auto" width="150" height="150" alt="Возможно взять товар в рассрочку"></Image>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
