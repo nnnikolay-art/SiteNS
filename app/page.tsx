@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       <div className="relative z-10 ">
           <Link href="tel:+7 951 191-11-11" className="text-center text-blue-950 text-2xl underline">
-              <div> Работаем круглосуточно: +7 951 191-11-11</div>
+              <div> Работаем круглосуточно:<br></br> +7 951 191-11-11</div>
           </Link>
           <h1 className="text-blue-900 text-black  text-3xl font-semibold text-center">О компании</h1>
 
@@ -337,7 +337,7 @@ export default function Home() {
 
                 </div>
                 <Link href="tel:+7 951 191-11-11" className="text-center text-blue-950 text-2xl underline">
-                    <div> Работаем круглосуточно: +7 951 191-11-11</div>
+                    <div> Работаем круглосуточно:<br></br> +7 951 191-11-11</div>
                 </Link>
 
             </div>
