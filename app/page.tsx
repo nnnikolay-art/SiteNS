@@ -89,9 +89,9 @@ export default function Home() {
                             <h2 className="text-xl font-bold mb-2">Armed 7F-3L</h2>
                             <p className="text-gray-600">Производительность: 3 литра в минуту</p>
                             <div className="flex">
-                                <div className="w-1/3 h-1 bg-green-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 h-16"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 h-16"></div>
+                                <div className="w-1/3 h-1 bg-green-600 ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-gray-400 "></div>
+                                <div className="w-1/3 h-1 bg-gray-400 "></div>
                             </div>
                             <details>
                                 <b>Концентратор кислорода Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
@@ -115,9 +115,9 @@ export default function Home() {
                             <h2 className="text-xl font-bold mb-2">Armed 7F-5L</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 h-16"></div>
+                                <div className="w-1/3 h-1 bg-blue-600 ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-gray-400 "></div>
                             </div>
                             <details>
                                 Концентратор кислорода <b>Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
@@ -141,9 +141,9 @@ export default function Home() {
                             <h2 className="text-xl font-bold mb-2">Armed 8F-5</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 h-16"></div>
+                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-gray-400 "></div>
                             </div>
                             <details>
                                 Полноценный пятилитровый концентратор, находящий широкое применение как в домашних, так и в стационарных условиях. Одно из преимуществ -  возможность использования концентратора как основного или резервного источника кислорода.<br></br>
@@ -151,7 +151,7 @@ export default function Home() {
                                 <b>ПРИНЦИП РАБОТЫ</b><br></br>
                                 ​<br></br>
                                 <b>Кислородный концентратор Армед 8F-5</b> работает по принципу физического разделения газов (кислорода, азота и проч.), содержащихся в воздухе. Воздух буквально просеивается через специальные &quotмолекулярные сита&quot (цеолит) и на выходе получается струя с концентрацией кислорода до 90%, тогда как в обычном воздухе концентрация кислорода не превышает 21%. Такая технология делает концентратор кислорода Армед 8F-5 практически безопасным в сравнении с обычными кислородными баллонами.<br></br>
-                                <b>ПРОИЗВОДИТЕЛЬНОСТЬ </b><br></br>
+                                <b>ПРОИЗВОДИТЕЛЬНОСТЬ</b><br></br>
                                 ​<br></br>
                                 <b>Кислородный концентратор Армед 8F-5</b> способен производить от 1 до 5 литров воздушно-кислородной смеси в минуту с концентрацией кислорода более 90%.<br></br>
                                 При увеличении объема больше чем 5 л/мин, концентрация кислорода в вырабатываемой воздушно-кислородной смеси будет менее 90%.<br></br>
@@ -169,9 +169,9 @@ export default function Home() {
                             <h2 className="text-xl font-bold mb-2">Longfian JAY-5A</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 h-16"></div>
+                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-gray-400  ml-auto"></div>
                             </div>
                             <details>
                                 <b>Longfian JAY-5A</b>  - это концентратор кислорода нового поколения, выдающий О2 концентрации около 93% при настраиваемой производительности от нуля до пяти литров в минуту, оптимально подходящий как для лечения, так и для приготовления полезных кислородных коктейлей в домашних условиях.<br></br>
@@ -198,8 +198,8 @@ export default function Home() {
                             <p className="text-gray-600">Производительность: 10 литров в минуту</p>
                             <div className="flex">
                                 <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-red-600 h-16 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-red-600 h-16"></div>
+                                <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
+                                <div className="w-1/3 h-1 bg-red-600 "></div>
                             </div>
                             <details>
                                 Кислородный концентратор <b>Longfian JAY-10</b><br></br>
