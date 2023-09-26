@@ -85,7 +85,7 @@ export default function Home() {
                 <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
 
                         <div className="bg-transparent p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk7f3l} width="300" height="300" alt="Кислородный концентратор Armed 7F-3L" ></Image>
+                            <Image src={kk7f3l} width="200" height="200" alt="Кислородный концентратор Armed 7F-3L" ></Image>
                             <h2 className="text-xl font-bold mb-2">Armed 7F-3L</h2>
                             <p className="text-gray-600">Производительность: 3 литра в минуту</p>
                             <div className="flex">
@@ -111,7 +111,7 @@ export default function Home() {
                             </details>
                         </div>
                         <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk7f5l} width="300" height="300" alt="Кислородный концентратор Armed Armed 7F-5L"  ></Image>
+                            <Image src={kk7f5l} width="200" height="200" alt="Кислородный концентратор Armed Armed 7F-5L"  ></Image>
                             <h2 className="text-xl font-bold mb-2">Armed 7F-5L</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
@@ -137,7 +137,7 @@ export default function Home() {
                             </details>
                         </div>
                         <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk8f5} width="300" height="300" alt="Кислородный концентратор Armed Armed Armed 8F-5"  ></Image>
+                            <Image src={kk8f5} width="200" height="200" alt="Кислородный концентратор Armed Armed Armed 8F-5"  ></Image>
                             <h2 className="text-xl font-bold mb-2">Armed 8F-5</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
@@ -165,7 +165,7 @@ export default function Home() {
                             </details>
                         </div>
                         <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kkjay5f} width="300" height="300" alt="Кислородный концентратор Longfian JAY-5A"  ></Image>
+                            <Image src={kkjay5f} width="200" height="200" alt="Кислородный концентратор Longfian JAY-5A"  ></Image>
                             <h2 className="text-xl font-bold mb-2">Longfian JAY-5A</h2>
                             <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                             <div className="flex">
@@ -193,7 +193,7 @@ export default function Home() {
                             </details>
                         </div>
                         <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kkjay10} width="300" height="300" alt="Кислородный концентратор Longfian JAY-10" ></Image>
+                            <Image src={kkjay10} width="200" height="200" alt="Кислородный концентратор Longfian JAY-10" ></Image>
                             <h2 className="text-xl font-bold mb-2">Longfian JAY-10</h2>
                             <p className="text-gray-600">Производительность: 10 литров в минуту</p>
                             <div className="flex">
