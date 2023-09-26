@@ -8,8 +8,8 @@ import Link from "next/link"
 
 
 const contacts = [
-    { city: 'Ижевск', phone: '+7 951 191-11-11', email: 'medprokat18@mail.ru',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а' },
-    { city: 'Краснодар', phone: '+7 906 818-39-36', email: 'medprokat66@mail.ru',address: 'Краснодарский край г. Краснодар ул. Леваневского, 3' },
+    { city: 'Ижевск',       phone: '+7 951 191-11-11', email: 'medprokat18@mail.ru',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а' },
+    { city: 'Краснодар',    phone: '+7 906 818-39-36', email: 'medprokat66@mail.ru',address: 'Краснодарский край г. Краснодар ул. Леваневского, 3' },
     { city: 'Екатеринбург', phone: '+7 951 191-11-11', email: 'medprokat23@mail.ru',address: 'Свердловская обл. г. Екатеринбург ул. Степена разина 122' },
 ];
 {/*+7 (982) 796-66-66*/}
