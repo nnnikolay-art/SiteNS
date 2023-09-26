@@ -270,7 +270,7 @@ export default function Home() {
 
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Множество других товаров можно найти по городам:</h2>
                 <div className='columns-1 mb-2'>
-                    <div className="w-full text-black columns-3  ">
+                    <div className="w-full text-black sm:columns-3 columns-1  ">
                         <Link href="dataProducts/Izhevsk" className="text-xl font-semibold   ">
                             <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={izhevskCity} width="75" height="75" alt="izh"></Image>
                             <p className="text-2xl">Ижевск</p>
