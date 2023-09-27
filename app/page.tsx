@@ -14,6 +14,8 @@ import EkaterCity from '../public/Ekaterenburg.png'
 import ListOxy from '@/app/Component/ListOxy'
 import ReabStuff from '@/app/Component/ReabStuff'
 
+import srIcon from '../public/ProductImg/SR_icon_w_trans.png'
+
 import CategoryBtn from '../public/CategoryButton.png'
 import ListBtn from '../public/ListButton.png'
 
@@ -128,7 +130,7 @@ export default function Home() {
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
                     <div className="border gap-3 ml-2 ">
                         <button onClick={handleToggle}>
-                            <Image src={kkjay10} width="300" height="300" alt="Кислородные концентраторы" ></Image>
+                            <Image src={kk7f3l} width="250" height="250" alt="Кислородные концентраторы" ></Image>
                             <div className="text-sm mt-2 bottom-auto my-auto"> Кислородные концентраторы</div>
                             <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6  bottom-auto my-auto">Открыть</div>
                         </button>
@@ -136,7 +138,7 @@ export default function Home() {
 
                     <div className="border ml-2 ">
                         <button onClick={handleToggleReab} >
-                            <Image src={k2} width="250" height="250" alt="Средства реабилитации" ></Image>
+                            <Image src={srIcon} width="300" height="300" alt="Средства реабилитации" ></Image>
                             <div className="text-sm mt-2  my-auto"> Средства реабилитации</div>
                             <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6 bottom-auto my-auto">Открыть</div>
                         </button>

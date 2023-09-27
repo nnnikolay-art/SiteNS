@@ -21,6 +21,9 @@ const ListOxy = () => {
                         <div className="w-1/3 h-1 bg-gray-400 "></div>
                         <div className="w-1/3 h-1 bg-gray-400 "></div>
                     </div>
+
+                    <p className="text-gray-600"><b>Прокат (Неделя):</b> 1 490 ₽ </p>
+                    <p className="text-gray-600"><b>Прокат (Месяц):</b> 2 990 ₽ \ месяц</p>
                     <details>
                         <b>Концентратор кислорода Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
                         <br></br>
@@ -37,6 +40,7 @@ const ListOxy = () => {
                         <b>• Плавная регулировка объема воздушно-кислородного потока на выходе</b><br></br>
                         <b>• Имеется таймер (до 99 минут). По истечении заданного времени, прибор автоматически отключается</b><br></br>
                     </details>
+
                 </div>
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
@@ -48,6 +52,10 @@ const ListOxy = () => {
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
                         <div className="w-1/3 h-1 bg-gray-400 "></div>
                     </div>
+
+                    <p className="text-gray-600"><b>Прокат (Неделя):</b> 1 790 ₽ </p>
+                    <p className="text-gray-600"><b>Прокат (Месяц):</b> 3 990 ₽ \ месяц</p>
+
                     <details>
                         Концентратор кислорода <b>Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
                         <br></br>
@@ -64,6 +72,7 @@ const ListOxy = () => {
                         <b>• Плавная регулировка объема воздушно-кислородного потока на выходе</b><br></br>
                         <b>• Имеется таймер (до 99 минут). По истечении заданного времени, прибор автоматически отключается</b><br></br>
                     </details>
+
                 </div>
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
@@ -75,6 +84,10 @@ const ListOxy = () => {
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
                         <div className="w-1/3 h-1 bg-gray-400 "></div>
                     </div>
+
+                    <p className="text-gray-600"><b>Прокат (Неделя):</b> 1 790 ₽ </p>
+                    <p className="text-gray-600"><b>Прокат (Месяц):</b> 4 990 ₽ \ месяц</p>
+
                     <details>
                         Полноценный пятилитровый концентратор, находящий широкое применение как в домашних, так и в стационарных условиях. Одно из преимуществ -  возможность использования концентратора как основного или резервного источника кислорода.<br></br>
                         <br></br>
@@ -104,6 +117,10 @@ const ListOxy = () => {
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
                         <div className="w-1/3 h-1 bg-gray-400  ml-auto"></div>
                     </div>
+
+                    <p className="text-gray-600"><b>Прокат (Неделя):</b> 1 790 ₽ </p>
+                    <p className="text-gray-600"><b>Прокат (Месяц):</b> 4 990 ₽ \ месяц</p>
+
                     <details>
                         <b>Longfian JAY-5A</b>  - это концентратор кислорода нового поколения, выдающий О2 концентрации около 93% при настраиваемой производительности от нуля до пяти литров в минуту, оптимально подходящий как для лечения, так и для приготовления полезных кислородных коктейлей в домашних условиях.<br></br>
                         Полезные опции концентратора Longfian JAY-5A<br></br>
@@ -132,6 +149,10 @@ const ListOxy = () => {
                         <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
                         <div className="w-1/3 h-1 bg-red-600 "></div>
                     </div>
+
+                    <p className="text-gray-600"><b>Прокат (Неделя):</b> 2 990 ₽ </p>
+                    <p className="text-gray-600"><b>Прокат (Месяц):</b> 9 990₽ \ месяц</p>
+
                     <details>
                         Кислородный концентратор <b>Longfian JAY-10</b><br></br>
                         <br></br>
