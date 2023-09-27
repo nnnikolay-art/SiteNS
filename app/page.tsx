@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image'
 import Navbar from '@/app/Component/Navbar'
 import pict24 from '../public/pngwing.com.png'
@@ -9,6 +11,9 @@ import izhevskCity from '../public/Izhevsk.png'
 import KrasnodarCity from '../public/Krasnodar.png'
 import EkaterCity from '../public/Ekaterenburg.png'
 
+import ListOxy from '@/app/Component/ListOxy'
+import ReabStuff from '@/app/Component/ReabStuff'
+
 import CategoryBtn from '../public/CategoryButton.png'
 import ListBtn from '../public/ListButton.png'
 
@@ -19,7 +24,7 @@ import kkjay5f from '../public/ProductImg/JAY_5A_w_trans.png'
 import kkjay10 from '../public/ProductImg/JAY_10_w_trans.png'
 
 import kups from '../public/ProductImg/Kostil_UPS.jpg'
-import k2 from '../public/ProductImg/Kostil2.jpg'
+import k2 from '../public/ProductImg/Kostil2_w_trans.png'
 import k3 from '../public/ProductImg/Kostil3.jpg'
 import hmain from '../public/ProductImg/HodunkiMain.jpg'
 
@@ -28,7 +33,41 @@ import Link from 'next/link'
 import Head from "next/head";
 import React from "react";
 
+import { useState } from 'react';
+
+
+
 export default function Home() {
+
+
+        const [isExpanded, setIsExpanded] = useState(false);
+
+        const [isExpandedReab, setIsExpandedRReab] = useState(false);
+
+        const handleToggle = () => {
+            setIsExpanded(!isExpanded);
+            if (isExpanded == true)
+            {
+                setIsExpandedRReab(false)
+            }
+
+        };
+
+        const handleToggleReab = () => {
+            setIsExpandedRReab(!isExpandedReab);
+
+            if (isExpandedReab == true)
+            {
+                setIsExpanded(false)
+            }
+        };
+
+    const handleReturn = () => {
+        setIsExpandedRReab(false);
+        setIsExpanded(false);
+
+    };
+
 
 
   return (
@@ -81,193 +120,60 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className="container mx-auto px-4 mb-4">
+            <div className="container mx-auto px-4 mb-4 ">
+                <button onClick={handleReturn} className={(isExpanded || isExpandedReab ? "visible " : " invisible h-1" )} >
+                    <div className="text-2xl border-blue-700 hover:scale-105" >⟲ Назад к выбору категории</div>
+                </button>
+                <div className={"text-lg font-bold"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
+                <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
+                    <div className="border gap-3 ml-2 ">
+                        <button onClick={handleToggle}>
+                            <Image src={kkjay10} width="300" height="300" alt="Кислородные концентраторы" ></Image>
+                            <div className="text-sm mt-2 bottom-auto my-auto"> Кислородные концентраторы</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6  bottom-auto my-auto">Открыть</div>
+                        </button>
+                    </div>
 
+                    <div className="border ml-2 ">
+                        <button onClick={handleToggleReab} >
+                            <Image src={k2} width="250" height="250" alt="Средства реабилитации" ></Image>
+                            <div className="text-sm mt-2  my-auto"> Средства реабилитации</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6 bottom-auto my-auto">Открыть</div>
+                        </button>
 
-                <div className="underline text-2xl mt-2"> Кислородные концентраторы</div>
-                <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
-
-                        <div className="bg-transparent p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk7f3l} width="200" height="200" alt="Кислородный концентратор Armed 7F-3L" ></Image>
-                            <h2 className="text-xl font-bold mb-2">Armed 7F-3L</h2>
-                            <p className="text-gray-600">Производительность: 3 литра в минуту</p>
-                            <div className="flex">
-                                <div className="w-1/3 h-1 bg-green-600 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 "></div>
-                                <div className="w-1/3 h-1 bg-gray-400 "></div>
-                            </div>
-                            <details>
-                                <b>Концентратор кислорода Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
-                                ​<br></br>
-                                <b>ПРИНЦИП РАБОТЫ</b><br></br>
-                                ​<br></br>
-                                <b>Кислородный концентратор Армед 7F-3L</b>  работает по принципу физического разделения газов (кислорода, азота и проч.), содержащихся в воздухе.  Воздух буквально просеивается через специальные &quotмолекулярные сита&quot (цеолит) и на выходе получается струя с концентрацией кислорода до 90%, тогда как в обычном воздухе концентрация кислорода не превышает 21%. Такая технология делает концентратор кислорода Армед 7F-3L практически безопасным в сравнении с обычными кислородными баллонами.<br></br>
-                                <b>ПРОИЗВОДИТЕЛЬНОСТЬ</b> <br></br>
-                                ​<br></br>
-                                Кислородный концентратор Армед 7F-3L может производить от 1 до 3 литров воздушно-кислородной смеси в минуту с концентрацией кислорода 93%±3.<br></br>
-                                <b>ВОЗМОЖНОСТИ</b><br></br>
-                                ​<br></br>
-                                <b>• Беспрерывная работа 24 часа в сутки от розетки 220В</b><br></br>
-                                <b>• Тревожная сигнализация (зуммер) при отключении электричества</b><br></br>
-                                <b>• Плавная регулировка объема воздушно-кислородного потока на выходе</b><br></br>
-                                <b>• Имеется таймер (до 99 минут). По истечении заданного времени, прибор автоматически отключается</b><br></br>
-                            </details>
-                        </div>
-                        <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk7f5l} width="200" height="200" alt="Кислородный концентратор Armed Armed 7F-5L"  ></Image>
-                            <h2 className="text-xl font-bold mb-2">Armed 7F-5L</h2>
-                            <p className="text-gray-600">Производительность: 5 литров в минуту</p>
-                            <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 "></div>
-                            </div>
-                            <details>
-                                Концентратор кислорода <b>Армед 7F-3L</b> выпускается с 2007 года и зарекомендовал себя как добротный и надежный &quot3-литровый&quot аппарат. Прибор выдает почти медицинский кислород на скорости потока от 1 до 3 л/мин.<br></br>
-                                ​<br></br>
-                                <b>ПРИНЦИП РАБОТЫ</b><br></br>
-                                ​<br></br>
-                                Кислородный концентратор Армед 7F-3L  работает по принципу физического разделения газов (кислорода, азота и проч.), содержащихся в воздухе.  Воздух буквально просеивается через специальные &quotмолекулярные сита&quot (цеолит) и на выходе получается струя с концентрацией кислорода до 90%, тогда как в обычном воздухе концентрация кислорода не превышает 21%. Такая технология делает концентратор кислорода Армед 7F-3L практически безопасным в сравнении с обычными кислородными баллонами.<br></br>
-                                <b>ПРОИЗВОДИТЕЛЬНОСТЬ</b><br></br>
-                                ​<br></br>
-                                Кислородный концентратор Армед 7F-3L может производить от 1 до 3 литров воздушно-кислородной смеси в минуту с концентрацией кислорода 93%±3.<br></br>
-                                <b>ВОЗМОЖНОСТИ</b><br></br>
-                                ​<br></br>
-                                <b>• Беспрерывная работа 24 часа в сутки от розетки 220В</b><br></br>
-                                <b>• Тревожная сигнализация (зуммер) при отключении электричества</b><br></br>
-                                <b>• Плавная регулировка объема воздушно-кислородного потока на выходе</b><br></br>
-                                <b>• Имеется таймер (до 99 минут). По истечении заданного времени, прибор автоматически отключается</b><br></br>
-                            </details>
-                        </div>
-                        <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kk8f5} width="200" height="200" alt="Кислородный концентратор Armed Armed Armed 8F-5"  ></Image>
-                            <h2 className="text-xl font-bold mb-2">Armed 8F-5</h2>
-                            <p className="text-gray-600">Производительность: 5 литров в минуту</p>
-                            <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400 "></div>
-                            </div>
-                            <details>
-                                Полноценный пятилитровый концентратор, находящий широкое применение как в домашних, так и в стационарных условиях. Одно из преимуществ -  возможность использования концентратора как основного или резервного источника кислорода.<br></br>
-                                ​<br></br>
-                                <b>ПРИНЦИП РАБОТЫ</b><br></br>
-                                ​<br></br>
-                                <b>Кислородный концентратор Армед 8F-5</b> работает по принципу физического разделения газов (кислорода, азота и проч.), содержащихся в воздухе. Воздух буквально просеивается через специальные &quotмолекулярные сита&quot (цеолит) и на выходе получается струя с концентрацией кислорода до 90%, тогда как в обычном воздухе концентрация кислорода не превышает 21%. Такая технология делает концентратор кислорода Армед 8F-5 практически безопасным в сравнении с обычными кислородными баллонами.<br></br>
-                                <b>ПРОИЗВОДИТЕЛЬНОСТЬ</b><br></br>
-                                ​<br></br>
-                                <b>Кислородный концентратор Армед 8F-5</b> способен производить от 1 до 5 литров воздушно-кислородной смеси в минуту с концентрацией кислорода более 90%.<br></br>
-                                При увеличении объема больше чем 5 л/мин, концентрация кислорода в вырабатываемой воздушно-кислородной смеси будет менее 90%.<br></br>
-                                <b>ВОЗМОЖНОСТИ</b><br></br>
-                                ​<br></br>
-                                <b>• Может работать 24 часа в сутки от обычной розетки 220В</b><br></br>
-                                <b> • Плавная регулировка объема воздушно-кислородного потока</b><br></br>
-                                <b>• Встроен счетчик наработанного времени</b><br></br>
-                                <b>• Аварийная сигнализация (зуммер) при экстренном отключении электричества</b><br></br>
-                                <b>• Имеется индикатор электропитания и индикатор неисправности</b><br></br>
-                            </details>
-                        </div>
-                        <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kkjay5f} width="200" height="200" alt="Кислородный концентратор Longfian JAY-5A"  ></Image>
-                            <h2 className="text-xl font-bold mb-2">Longfian JAY-5A</h2>
-                            <p className="text-gray-600">Производительность: 5 литров в минуту</p>
-                            <div className="flex">
-                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-gray-400  ml-auto"></div>
-                            </div>
-                            <details>
-                                <b>Longfian JAY-5A</b>  - это концентратор кислорода нового поколения, выдающий О2 концентрации около 93% при настраиваемой производительности от нуля до пяти литров в минуту, оптимально подходящий как для лечения, так и для приготовления полезных кислородных коктейлей в домашних условиях.<br></br>
-                                Полезные опции концентратора Longfian JAY-5A<br></br>
-                                В аппарате продумано всё до мелочей: он компактный, имеет ЖК-экран с интуитивно-понятным управлением, его удобно перевозить по дому за счёт специальных колёсиков, он снабжён парой сменных фильтров, канюлей, всеми необходимыми приспособлениями для оксигенотерапии, а также сумкой для их хранения.<br></br>
-                                Принцип функционирования концентратора Лонгфиан Джей 5А<br></br>
-                                В концентраторе Longfian JAY-5A реализован метод короткоцикловой адсорбции (PSA), основанный на направлении компрессором отфильтрованного атмосферного воздуха на колонки, содержащие порошковый адсорбент (&quotмолекулярное сито&quot), основной задачей которых служит удаление азота. Далее О2 проходит бактериальную фильтрацию и подаётся посредством системы выхода пользователю.<br></br>
-                                Плюсы для использования дома<br></br>
-                                JAY-5A работает тихо, имеет незначительный уровень потребления электроэнергии и рассчитан на долгое время использования, благодаря чему данный аппарат – это идеальное решение для дома. Управлять концентратором очень просто, в комплекте Вы найдёте подробное руководство пользователя, а встроенная аварийная сигнализация известит о сбоях технического характера в процессе эксплуатации.<br></br>
-                                ​
-                                <b>Концентрация кислорода на выходе:</b> 93%<br></br>
-                                <b>Очень низкий уровень шума</b><br></br>
-                                <b>Жидкокристаллический экран</b><br></br>
-                                <b>Вырабатывает от 0 до 5 литров О2</b><br></br>
-                                <b>Несколько уровней фильтрации воздуха</b><br></br>
-                                <b>Лёгкость и высокая эргономика</b><br></br>
-                                <b>Подходит для эксплуатации дома</b><br></br>
-                                <b>Вес:</b> 16 кг<br></br>
-                            </details>
-                        </div>
-                        <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                            <Image src={kkjay10} width="200" height="200" alt="Кислородный концентратор Longfian JAY-10" ></Image>
-                            <h2 className="text-xl font-bold mb-2">Longfian JAY-10</h2>
-                            <p className="text-gray-600">Производительность: 10 литров в минуту</p>
-                            <div className="flex">
-                                <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
-                                <div className="w-1/3 h-1 bg-red-600 "></div>
-                            </div>
-                            <details>
-                                Кислородный концентратор <b>Longfian JAY-10</b><br></br>
-                                ​<br></br>
-                                Концентрация О2 до 10 л/мин - 90% (до 9 л/мин - 93%)<br></br>
-                                Высокое качество и надёжность<br></br>
-                                Небольшая шумность даже ночью<br></br>
-                                Гарантия производителя - <b>100 тысяч часов работы</b><br></br>
-                                ЖК-дисплей и система индикаций<br></br>
-                                Эргономичность:  <b>колёсики улучшают мобильность</b><br></br>
-                                Подходит для применения дома<br></br>
-                                <b>JAY-10</b> - это мощный и качественный кислородный концентратор для дома, способный выдавать высокую концентрацию кислорода (до десяти литров в минуту). Согласно заверениям разработчика, чистота О2 при максимальной концентрации – девяносто процентов. Если же выбран режим до девяти литров в минуту, то она будет равна приблизительно девяносто трём процентам.<br></br>
-                                Высочайшее качество исполнения<br></br>
-                                Аппарат произведён с использованием только надёжных и проверенных комплектующих, что гарантирует долгий срок службы и удобство применения. Компрессор концентратора выделяется своей высокой износоустойчивостью. Так, производитель гарантирует сто тысяч часов рабочего ресурса модели JAY-10, в то время как один рабочий цикл аппарата рассчитан на девяносто девять часов непрерывной эксплуатации.<br></br>
-                                Комфорт при использовании концентратора JAY-10<br></br>
-                                Джей 10 работает очень тихо, что создаст должный уровень комфорта даже во время сна и отдыха. На жидкокристаллическом экране кислородного концентратора отображаются следующие показателя: выбранное время, время работы текущей сессии, а также совокупное время работы аппарата.<br></br>
-                                Система индикаций концентратора JAY-10<br></br>
-                                Аппарат оснащён некоторыми полезными датчиками:<br></br>
-                                ​<br></br>
-                                индикатором, загорающимся после трёх тысяч часов эксплуатации;<br></br>
-                                температурный датчик срабатывает при увеличении рабочей температуры сверх пятидесяти градусов по Цельсию;<br></br>
-                                загорание красного индикатора сигнализирует о падении уровня концентрации О2 ниже 82%<br></br>
-                                Комплект поставки кислородного концентратора JAY-10:<br></br>
-                                ​<br></br>
-                                <b>Концентратор кислорода JAY-10</b><br></br>
-                                <b>Канюля кислородная</b> - 2 шт.<br></br>
-                                <b>Увлажнитель кислорода</b><br></br>
-                                <b>Фильтр грубой очистки запасной</b> - 2 шт.<br></br>
-                                <b>Фильтр тонкой очистки запасной</b> - 2 шт.<br></br>
-                                <b>Инструкция по эксплуатации</b><br></br>
-                                <b>Гарантийный талон</b><br></br>
-                            </details>
-                        </div>
-
+                    </div>
                 </div>
-                <div className="underline text-2xl mt-2">Средства реабилитации</div>
-                <div className="grid  sm:grid-cols-3 grid-cols-1 gap-4 flex  ">
 
-                    <div className="bg-transparent w-auto h-auto p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200 ">
-                        <Image src={kups} width="200" height="200" alt="Костыли с устройством против скольжения" ></Image>
-                        <h2 className="text-xl font-bold mb-2">Костыли с устройством против скольжения</h2>
-                        <p className="text-gray-600"><b>Продажа:</b> 2 490 ₽ </p>
-                        <p className="text-gray-600"><b>Прокат:</b> 490 ₽ \ месяц</p>
-                    </div>
-                    <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                        <Image src={k2} width="200" height="200" alt="Костыли металлические"   ></Image>
-                        <h2 className="text-xl font-bold mb-2">Костыли металлические</h2>
-                        <p className="text-gray-600"><b>Продажа:</b> 1 980 ₽ </p>
-                        <p className="text-gray-600"><b>Прокат:</b> 390 ₽ \ месяц</p>
-                    </div>
-                    <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                        <Image src={k3} width="250" height="250" alt="Костыли локевые"   ></Image>
-                        <h2 className="text-xl font-bold mb-2">Костыли локевые</h2>
-                        <p className="text-gray-600"><b>Продажа:</b> 2 490 ₽  </p>
-                        <p className="text-gray-600"><b>Прокат:</b> 490 ₽ \ месяц</p>
-                    </div>
-                    <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
-                        <Image src={hmain} width="200" height="200" alt="Ходунки складные"    ></Image>
-                        <h2 className="text-xl font-bold mb-2">Ходунки складные</h2>
-                        <p className="text-gray-600"><b>Продажа:</b> 2 990 ₽  </p>
-                        <p className="text-gray-600"><b>Прокат:</b> 490 ₽ \ месяц</p>
-                    </div>
-
-
+                <div
+                    style={{
+                        height: isExpandedReab ? 'auto' : '0',
+                        opacity: isExpandedReab ? 1 : 0,
+                        overflow: 'hidden',
+                        transition: 'height 0.7s ease, opacity 0.7s ease',
+                    }}
+                >
+                    {/* Содержимое разворачивающегося элемента */}
+                    <ReabStuff/>
                 </div>
+
+                <div
+                    style={{
+                        height: isExpanded ? 'auto' : '0',
+                        opacity: isExpanded ? 1 : 0,
+                        overflow: 'hidden',
+                        transition: 'height 0.7s ease, opacity 0.7s ease',
+                    }}
+                >
+                    {/* Содержимое разворачивающегося элемента */}
+                    <ListOxy/>
+                </div>
+
+
+
+
+
+
+
 
 
 

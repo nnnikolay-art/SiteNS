@@ -15,7 +15,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="relative z-10 flex-col items-center justify-center h-full">
+        <div className="relative z-10 flex-col items-center justify-center h-full fixed">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
 
             <nav className="bg-white border-gray-200 ">
