@@ -636,7 +636,7 @@ const Search = () => {
                     'Размер от ручки до подлокотника: 230 mm.'
                 ,
                 category: 'Средства реабилитации',
-                price: '14 900' ,
+                price: '2 790' ,
                 priceA: '',
                 city:'Krasnodar'
             },
@@ -652,7 +652,7 @@ const Search = () => {
                     'Размер от ручки до подлокотника: 230 mm.'
                 ,
                 category: 'Средства реабилитации',
-                price: '14 900' ,
+                price: '2 790' ,
                 priceA: '',
                 city:'Ekat'
             },
@@ -1435,7 +1435,7 @@ const Search = () => {
 
             <h1 className="text-center  text-3xl font-bold mb-4">Товарный ассортимент</h1>
 
-            <p className={isAnimating ? "transition opacity-60 ease-out " : ""}>    Найдено товаров:   {filteredData.length} </p>
+            <p className={ isAnimating ? "transition ease-out opacity-25  duration-200  " : ""}>    Найдено товаров:   {filteredData.length} </p>
             {/* Search input */}
             <div className="mb-1">
                 <label htmlFor="category" >

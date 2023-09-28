@@ -130,7 +130,7 @@ export default function Home() {
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
                     <div className="border gap-3 ml-2 ">
                         <button onClick={handleToggle}>
-                            <Image src={kk7f3l} width="250" height="250" alt="Кислородные концентраторы" ></Image>
+                            <Image src={kk8f5} width="250" height="250" alt="Кислородные концентраторы" ></Image>
                             <div className="text-sm mt-2 bottom-auto my-auto"> Кислородные концентраторы</div>
                             <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6  bottom-auto my-auto">Открыть</div>
                         </button>
