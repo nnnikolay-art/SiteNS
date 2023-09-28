@@ -1375,6 +1375,10 @@ const Search = () => {
 
 
     const [itemModal, setItemModal] = useState([data.items]);
+    const [isAnimating, setIsAnimating] = useState(false);
+
+
+
 
     const filteredData = data.items.filter((item) => {
         // Filtering based on search term
@@ -1410,7 +1414,14 @@ const Search = () => {
         }
 
         return true;
-    });
+    })
+
+    useEffect(() => {
+        setIsAnimating(true);
+        const timer = setTimeout(() => setIsAnimating(false), 200); // Задержка для завершения анимации (500 миллисекунд)
+        return () => clearTimeout(timer);
+    }, [filteredData.length]);
+    ;
 
     return (
         <div className="flex flex-col px-4 py-6 mx-auto bg-gray-50 text-black   ">
@@ -1424,6 +1435,7 @@ const Search = () => {
 
             <h1 className="text-center  text-3xl font-bold mb-4">Товарный ассортимент</h1>
 
+            <p className={isAnimating ? "transition opacity-60 ease-out " : ""}>    Найдено товаров:   {filteredData.length} </p>
             {/* Search input */}
             <div className="mb-1">
                 <label htmlFor="category" >
@@ -1478,7 +1490,9 @@ const Search = () => {
 
             {/* Displaying filtered data */}
             {filteredData.length > 0 ? (
+
                 <ul className="mx-auto  grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-3">
+
                     {filteredData.map((item) => (
                         <li
                             key={item.id}
@@ -1508,6 +1522,8 @@ const Search = () => {
             ) : (
                 <p className="text-lg text-center"><strong>Товары по выбранным параметрам поиска не найдены</strong></p>
             )}
+
+
 
             <Modal isOpen={isModalOpen} handleClose={handleCloseModal} itemModal = {itemModal}>
 
