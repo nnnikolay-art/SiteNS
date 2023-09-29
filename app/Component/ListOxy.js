@@ -4,7 +4,7 @@ import kk7f3l from "../../public/ProductImg/7F_3L_w_trans.png";
 import kk7f5l from "../../public/ProductImg/7F_5L_w_trans.png";
 import kk8f5 from "../../public/ProductImg/8F_5_w_trans.png";
 import kkjay5f from "../../public/ProductImg/JAY_5A_w_trans.png";
-import kkjay10 from "../../public/ProductImg/JAY_10_w_trans.png";
+import kkjay10 from "../../public/ProductImg/LongFian10.jpg";
 
 const ListOxy = () => {
     return (
