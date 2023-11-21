@@ -13,13 +13,7 @@ const Navbar = () => {
 
             <nav className="bg-white border-gray-200 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link href="#" className="flex items-center">
-                        <animated.div style={props} className="logo-animation">
-
-                            <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
-                        </animated.div>
-
-                    </Link>
+       
                     <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
