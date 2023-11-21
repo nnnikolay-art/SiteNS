@@ -5,9 +5,6 @@ import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
 import { YMInitializer } from 'react-yandex-metrika';
-import { useSpring, animated } from '@react-spring/web';
-
-
 
 
 const Navbar = () => {
@@ -17,13 +14,6 @@ const Navbar = () => {
         { key: "edit", name: "Edit File" },
         { key: "delete", name: "Delete File" },
     ];
-
-    const props = useSpring({
-        reverse: open,
-        from: { factor: 1, opacity: 1, scale: 1,  freq: '0.0, 0.0' },
-        to:  { factor: 2, opacity: 0, scale: 1, freq: '0.0175, 0.0' },
-        config: { duration: 500 ,},
-    });
 
 
 
@@ -93,7 +83,7 @@ const Navbar = () => {
                                 <Dropdown.Item  className="p-0"  key= '2'     color={"default"}>
                                     <Link  className="m-0 block h-full w-full p-2" href="/catalog" rel="canonical">
                                         <Text b color="inherit" css={{ d: 'flex' }}>
-                                            Каталог
+                                            Катагории
                                         </Text>
                                     </Link>
                                 </Dropdown.Item>
