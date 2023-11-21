@@ -5,9 +5,33 @@ import kk7f5l from "../../public/ProductImg/7F_5L_w_trans.png";
 import kk8f5 from "../../public/ProductImg/8F_5_w_trans.png";
 import kkjay5f from "../../public/ProductImg/JAY_5A_w_trans.png";
 import kkjay10 from "../../public/ProductImg/LongFian10.jpg";
+import { useSpring, animated } from '@react-spring/web';
 
 const ListOxy = () => {
+
+
+    const [isVisible, setIsVisible] = React.useState(false);
+
+    const props = useSpring({
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
+        config: { duration: 1500 },
+    });
+
+    const propsLine = useSpring({
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(40px)',
+        config: { duration: 1500 },
+    });
+
+    React.useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
+
+
     return (
+        <animated.div style={props} >
         <div>
 
             <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
@@ -188,6 +212,7 @@ const ListOxy = () => {
 
             </div>
             </div>
+        </animated.div>
     );
 };
 

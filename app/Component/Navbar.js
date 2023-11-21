@@ -5,6 +5,10 @@ import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
 import { YMInitializer } from 'react-yandex-metrika';
+import { useSpring, animated } from '@react-spring/web';
+
+
+
 
 const Navbar = () => {
     const menuItems = [
@@ -14,6 +18,17 @@ const Navbar = () => {
         { key: "delete", name: "Delete File" },
     ];
 
+    const props = useSpring({
+        reverse: open,
+        from: { factor: 1, opacity: 1, scale: 1,  freq: '0.0, 0.0' },
+        to:  { factor: 2, opacity: 0, scale: 1, freq: '0.0175, 0.0' },
+        config: { duration: 500 ,},
+    });
+
+
+
+
+
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full fixed">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
@@ -21,7 +36,10 @@ const Navbar = () => {
             <nav className="bg-white border-gray-200 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link href="#" className="flex items-center">
-                        <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
+                        <animated.div style={props} className="logo-animation">
+
+                            <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
+                        </animated.div>
 
                     </Link>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">

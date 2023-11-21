@@ -7,12 +7,15 @@ import Head from "next/head";
 import Link from "next/link"
 
 
+
 const contacts = [
-    { city: 'Ижевск',       phone: '+7 951 191-11-11', email: 'medprokat18@mail.ru',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а' },
-    { city: 'Краснодар',    phone: '+7 906 818-39-36', email: 'medprokat66@mail.ru',address: 'Краснодарский край г. Краснодар ул. Леваневского, 3' },
-    { city: 'Екатеринбург', phone: '+7 951 191-11-11', email: 'medprokat23@mail.ru',address: 'Свердловская обл. г. Екатеринбург ул. Степена разина 122' },
+    { city: 'Ижевск',       phone: '+7 951 191-11-11', email: 'medprokat18@mail.ru',address: 'Удмуртская республика, г. Ижевск, ул. Ломоносова 9а', active:true },
+    { city: 'Краснодар',    phone: '+7 906 818-39-36', email: 'medprokat66@mail.ru',address: 'Краснодарский край г. Краснодар ул. Леваневского, 3', active:true },
+    { city: 'Екатеринбург', phone: '+7 951 191-11-11', email: 'medprokat23@mail.ru',address: 'Свердловская обл. г. Екатеринбург ул. Степена разина 122', active:false },
 ];
-{/*+7 (982) 796-66-66*/}
+
+
+
 
 export const metadata = {
     title: 'Контакты компании ЦентрМедПрокат',
@@ -34,8 +37,10 @@ const ContactList = () => (
 
         <div className="max-w-2xl mx-auto bg-gray-50">
             <h2 className="text-center text-black text-3xl font-bold mb-10">Список контактов</h2>
-            {contacts.map(({ city, phone, email ,address}) => (
-                <div key={city} className="bg-gray-200 shadow-lg rounded-lg p-6 mb-6   ">
+            {contacts.map(({ city, phone, email ,address, active}) =>
+                active && (
+
+                 <div key={city} className="bg-gray-200 shadow-lg rounded-lg p-6 mb-6   ">
                     <div className="divide-y divide-gray-300 divide-x-reverse">
                         <h3 className="text-xl font-bold text-black mb-1">{city}</h3>
                         <div></div>
@@ -55,7 +60,7 @@ const ContactList = () => (
                         </div>
 
                 </div>
-            ))}
+                ))}
         </div>
     </div>
 

@@ -1483,7 +1483,7 @@ const Search = () => {
                 >
 
                     <option id="Izhevsk" value="Izhevsk">Ижевск</option>
-                    <option id="Ekat" value="Ekat">Екатеренбург</option>
+                    {/*     <option id="Ekat" value="Ekat">Екатеренбург</option> */}
                     <option id="Krasnodar" value="Krasnodar">Краснодар</option>
                 </select>
             </div>

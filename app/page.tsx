@@ -72,6 +72,8 @@ export default function Home() {
 
 
 
+
+
   return (
     <main>
         <head>
@@ -181,33 +183,21 @@ export default function Home() {
 
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Множество других товаров можно найти по городам:</h2>
                 <div className='columns-1 mb-2'>
-                    <div className="w-full text-black sm:columns-3 columns-1  ">
+                    <div className="w-full text-black sm:columns-3 columns-3  ">
                         <Link href="dataProducts/Izhevsk" className="text-xl font-semibold   ">
                             <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={izhevskCity} width="75" height="75" alt="izh"></Image>
                             <p className="text-2xl">Ижевск</p>
                         </Link><br></br>
-                        <Link href="dataProducts/Krasnodar" className="text-xl font-semibold  ">
+                        <Link href="dataProducts/Krasnodar" className="text-xl font-semibold   ">
                             <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={KrasnodarCity} width="75" height="75" alt="Krasnodar"></Image>
                             <p className="text-2xl">Краснодар</p>
                         </Link><br></br>
-                        <Link href="dataProducts/Ekaterinburg" className="text-xl font-semibold  ">
+                        <Link href="dataProducts/Ekaterinburg" className="text-xl font-semibold invisible  ">
                             <Image className="rounded-lg shadow-lg transition-all duration-200 hover:scale-125" src={EkaterCity} width="75" height="75"  alt="ekatenburg"></Image>
                             <p className="text-2xl">Екатеринбург</p>
                         </Link><br></br>
                     </div>
                 </div>
-
-
-
-
-                <h2 className="text-2xl text-black lg:text-3xl font-semibold ">Выберете на предпочитаемый способ поиска товара:</h2>
-                <Link href='catalog' className="ml-5  inline-block font-bold py-2 px-4 border-2 border-blue-700 rounded transition-all duration-200 hover:scale-125 ">
-                    <p>► Поиск товара по категории</p>
-                </Link>
-
-                <Link href='dataProducts/99' className="ml-5  inline-block font-bold py-2 px-4 border-2 border-blue-700 rounded transition-all duration-200 hover:scale-125 ">
-                    <p>► Показать весь ассортимент товара</p>
-                </Link>
 
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mt-10">Преимущества компании:</h2>
                 <div className="flex flex-wrap -mx-4">
