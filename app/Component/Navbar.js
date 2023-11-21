@@ -6,19 +6,7 @@ import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
 import { YMInitializer } from 'react-yandex-metrika';
 
-
 const Navbar = () => {
-    const menuItems = [
-        { key: "new", name: "New File" },
-        { key: "copy", name: "Copy Link" },
-        { key: "edit", name: "Edit File" },
-        { key: "delete", name: "Delete File" },
-    ];
-
-
-
-
-
     return (
         <div className="relative z-10 flex-col items-center justify-center h-full fixed">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
