@@ -11,9 +11,11 @@ const Navbar = () => {
         <div className="relative z-10 flex-col items-center justify-center h-full fixed">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
 
-            <nav className="bg-white border-gray-200 ">
+            <div className="bg-white border-gray-200 ">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-       
+                    <Link href="#" className="flex items-center">
+                            <Image src={logo4} alt="Flowbite Logo" className='h-25 w-72' width={400} height={150}/>
+                    </Link>
                     <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                         <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                             <li>
@@ -65,7 +67,7 @@ const Navbar = () => {
                                 <Dropdown.Item  className="p-0"  key= '2'     color={"default"}>
                                     <Link  className="m-0 block h-full w-full p-2" href="/catalog" rel="canonical">
                                         <Text b color="inherit" css={{ d: 'flex' }}>
-                                            Катагории
+                                            Каталог
                                         </Text>
                                     </Link>
                                 </Dropdown.Item>
@@ -99,7 +101,7 @@ const Navbar = () => {
                     </Dropdown>
 
                 </div>
-            </nav>
+            </div>
 
         </div>
     );
