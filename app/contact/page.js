@@ -26,13 +26,9 @@ const ContactList = () => (
     <div className="bg-gray-100 py-10">
         <Head>
             <title>
-                Контакты компании
+                ЦентрМедПрокат - Контакты
             </title>
-            <meta
-                http-equiv="Content-Type"
-                content="text/html; charset=utf-8"
-                key= "contact"
-            />
+            <meta name="description" content="Свяжитесь с нашей компанией для получения более подробной информации о наших услугах и товарах" />
         </Head>
 
         <div className="max-w-2xl mx-auto bg-gray-50">

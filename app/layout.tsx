@@ -4,6 +4,8 @@ import Navbar from '@/app/Component/Navbar'
 import Logo from "@/app/Component/Logo";
 
 
+
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

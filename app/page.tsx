@@ -69,11 +69,6 @@ export default function Home() {
         setIsExpanded(false);
 
     };
-
-
-
-
-
   return (
     <main>
         <head>
@@ -83,14 +78,10 @@ export default function Home() {
             />
         </head>
         <Head>
-
-
-
-
             <title>
-                ЦентрМедПрокат. Средства реаблитации в аренду и продажу
+                ЦентрМедПрокат. Медицинские товары в аренду и продажу
             </title>
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <meta name="description" content="Предлагаем аренду и продажу медицинского оборудования высокого качества в Ижевске. Свяжитесь с нами уже сегодня!" />
         </Head>
 
 
@@ -132,20 +123,22 @@ export default function Home() {
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
                     <div className="border gap-3 ml-2 ">
                         <button onClick={handleToggle}>
-                            <Image src={kk8f5} width="250" height="250" alt="Кислородные концентраторы" ></Image>
+                            <Image src={kk8f5} width="260" height="260" alt="Кислородные концентраторы" ></Image>
                             <div className="text-sm mt-2 bottom-auto my-auto"> Кислородные концентраторы</div>
-                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6  bottom-auto my-auto">Открыть</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
                         </button>
                     </div>
 
-                    <div className="border ml-2 ">
+                    <div className="border gap-3 ml-2 ">
                         <button onClick={handleToggleReab} >
-                            <Image src={srIcon} width="300" height="300" alt="Средства реабилитации" ></Image>
+                            <Image src={srIcon} width="260" height="260" alt="Средства реабилитации" ></Image>
                             <div className="text-sm mt-2  my-auto"> Средства реабилитации</div>
-                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 mx-6 bottom-auto my-auto">Открыть</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
                         </button>
-
                     </div>
+
+
+
                 </div>
 
                 <div
@@ -172,15 +165,12 @@ export default function Home() {
                     <ListOxy/>
                 </div>
 
-
-
-
-
-
-
-
-
-
+                <Link href="/dataProducts/Izhevsk">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-xl">
+                    ➦ Показать все товары
+                </button>
+                </Link>
+                {/*
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mb-8 ">Множество других товаров можно найти по городам:</h2>
                 <div className='columns-1 mb-2'>
                     <div className="w-full text-black sm:columns-3 columns-3  ">
@@ -198,6 +188,7 @@ export default function Home() {
                         </Link><br></br>
                     </div>
                 </div>
+                */}
 
                 <h2 className="text-2xl text-black lg:text-3xl font-semibold mt-10">Преимущества компании:</h2>
                 <div className="flex flex-wrap -mx-4">

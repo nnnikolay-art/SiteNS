@@ -1424,12 +1424,12 @@ const Search = () => {
     ;
 
     return (
-        <div className="flex flex-col px-4 py-6 mx-auto bg-gray-50 text-black   ">
+        <div className={"flex flex-col px-4 py-6 mx-auto bg-gray-50 text-black " + (isModalOpen ? "fixed" :"") } >
             <Head>
                 <title>
-                    Товары компании. Католог. Поиск по названию, категории и городу
+                    Наши Товары - Аренда и продажа медицинского оборудования
                 </title>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <meta name="description" content="Просмотрите наш ассортимент медицинского оборудования, доступного для аренды и продажи. Выберите то, что подходит именно вам!" />
             </Head>
 
 
@@ -1491,7 +1491,7 @@ const Search = () => {
             {/* Displaying filtered data */}
             {filteredData.length > 0 ? (
 
-                <ul className="mx-auto  grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-3">
+                <ul className="mx-auto  grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-3 ">
 
                     {filteredData.map((item) => (
                         <li

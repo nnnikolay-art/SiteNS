@@ -5,10 +5,14 @@ import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
 import { YMInitializer } from 'react-yandex-metrika';
+import styled from "styled-components";
+
+
 
 const Navbar = () => {
     return (
-        <div className="relative z-10 flex-col items-center justify-center h-full fixed">
+
+        <div className="sticky z-50 flex-col items-center justify-center h-full sticky top-0 bg-white  ">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
 
             <div className="bg-white border-gray-200 ">
@@ -52,7 +56,7 @@ const Navbar = () => {
 
 
                     <Dropdown >
-                        <Dropdown.Button flat className="visible  sm:invisible ">☰</Dropdown.Button>
+                        <Dropdown.Button flat className="visible  md:invisible   ">☰</Dropdown.Button>
                         <Dropdown.Menu aria-label="Static Actions" >
 
 
@@ -104,6 +108,7 @@ const Navbar = () => {
             </div>
 
         </div>
+
     );
 };
 
