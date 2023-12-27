@@ -43,14 +43,14 @@ const SearchPage = () => {
 
 
     return (
-        <div>
-        <div className="flex justify-center items-center">
+        <div className="">
+        <div className="flex justify-center items-center flex-wrap w-full">
             <input
                 type="text"
                 value={searchTerm}
                 onChange={handleChange}
                 placeholder="Поиск товара"
-                className="border border-gray-300 rounded p-2 mr-2"
+                className="m-2 p-2 border border-gray-300 rounded"
 
                 onFocus={handleMouseOver} onBlur={handleMouseOut}
             />
@@ -59,7 +59,7 @@ const SearchPage = () => {
             <select
                 value={selectedCity}
                 onChange={handleCityChange}
-                className="border border-gray-300 rounded p-2 mr-2 "
+                className="m-2 p-2 border border-gray-300 rounded "
             >
                 {/*  <option value="">Выберите город</option> */}
                 {cities.map((c) => (
@@ -77,13 +77,14 @@ const SearchPage = () => {
                     }}
                     as={`dataProducts/${selectedCity}/?find=${searchTerm}`}
                 >
-                Поиск
+                    🔍︎
                 </Link>
             </button>
         </div>
+
         <div>
             {filteredProducts.length > 0 && searchTerm.length > 0  && (
-                <ul className={"border border-gray-300 rounded p-2 flex bg-blue-100 flex justify-center w-min-1 " }>
+                <ul className={"m-2 p-2 bg-blue-500 hover:bg-blue-600 text-white rounded" }>
                     {filteredProducts.slice(0,3).map((product) => (
                         <li
                             key={product}
