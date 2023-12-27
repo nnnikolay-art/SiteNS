@@ -55,8 +55,12 @@ const ContactList = () => (
                             <Link href={"mailto:"+email} className="text-gray-700 mb-1">{email}</Link>
                         </div>
 
-                </div>
+                 </div>
+
+
+
                 ))}
+
         </div>
     </div>
 

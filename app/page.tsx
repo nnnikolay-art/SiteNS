@@ -13,6 +13,7 @@ import EkaterCity from '../public/Ekaterenburg.png'
 
 import ListOxy from '@/app/Component/ListOxy'
 import ReabStuff from '@/app/Component/ReabStuff'
+import SearchBar from '@/app/Component/SearchBar'
 
 import srIcon from '../public/ProductImg/SR_icon_w_trans.png'
 
@@ -94,10 +95,13 @@ export default function Home() {
                  h-full
                  fill/>
         </div>
+
       <div className="relative z-10 ">
+          <SearchBar className="flex justify-center items-center"/>
           <Link href="tel:+7 951 191-11-11" className="text-center text-blue-950 text-2xl underline">
               <div> Работаем круглосуточно:<br></br> +7 951 191-11-11</div>
           </Link>
+
           <h1 className="text-blue-900 text-black  text-3xl font-semibold text-center">О компании</h1>
 
 

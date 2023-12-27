@@ -7,6 +7,10 @@ import Head from "next/head";
 
 
 const Search = () => {
+    const router = useSearchParams();
+    console.log(router.get('find'));
+
+    const findStr = router.get('find')
     const param = useParams();
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCity, setSelectedCity] = useState('Izhevsk');
@@ -32,6 +36,11 @@ const Search = () => {
         if (exCity)
         {
             setSelectedCity(exCity)
+        }
+
+        if (findStr)
+        {
+            setSearchTerm(findStr)
         }
     },[])
 
