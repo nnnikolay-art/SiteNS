@@ -37,7 +37,7 @@ const SearchPage = () => {
     };
 
     // Фильтрация списка товаров для подсказок
-    const filteredProducts = ["Алмаг", "Кислородный концентратор", "Кровать","Костыли","Ходунки","Трости","Весы детские","УФ-лампа"].filter((product) =>
+    const filteredProducts = ["Алмаг", "Кислородный концентратор", "Кровать","Костыли","Ходунки","Трости","Весы детские","Фотолампа для лечения желтухи новорожденных"].filter((product) =>
         product.toLowerCase().includes(searchTerm.slice(0,3).toLowerCase() )
     );
 
@@ -61,7 +61,7 @@ const SearchPage = () => {
                 onChange={handleCityChange}
                 className="m-2 p-2 border border-gray-300 rounded "
             >
-   
+
                 {cities.map((c) => (
                     <option key={c.keyCity} value={c.keyCity}>
                         {c.City}
@@ -70,7 +70,7 @@ const SearchPage = () => {
             </select>
             */}
 
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+            <button className="bg-blue-200 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded ">
                 <Link
                     href={{
                         pathname: '/dataProducts/[slug]/',
