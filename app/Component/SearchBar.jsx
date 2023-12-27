@@ -55,19 +55,20 @@ const SearchPage = () => {
                 onFocus={handleMouseOver} onBlur={handleMouseOut}
             />
 
-
+            {/*
             <select
                 value={selectedCity}
                 onChange={handleCityChange}
                 className="m-2 p-2 border border-gray-300 rounded "
             >
-                {/*  <option value="">Выберите город</option> */}
+   
                 {cities.map((c) => (
                     <option key={c.keyCity} value={c.keyCity}>
                         {c.City}
                     </option>
                 ))}
             </select>
+            */}
 
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
                 <Link
