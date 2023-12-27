@@ -83,7 +83,7 @@ const SearchPage = () => {
         </div>
         <div>
             {filteredProducts.length > 0 && searchTerm.length > 0  && (
-                <ul className={"border border-gray-300 rounded p-2 flex bg-blue-100 flex justify-center " }>
+                <ul className={"border border-gray-300 rounded p-2 flex bg-blue-100 flex justify-center w-min-1 " }>
                     {filteredProducts.slice(0,3).map((product) => (
                         <li
                             key={product}
