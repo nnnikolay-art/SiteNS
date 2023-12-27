@@ -97,7 +97,7 @@ export default function Home() {
         </div>
 
       <div className="relative z-10 ">
-          <SearchBar className="flex justify-center items-center"/>
+          <SearchBar/>
           <Link href="tel:+7 951 191-11-11" className="text-center text-blue-950 text-2xl underline">
               <div> Работаем круглосуточно:<br></br> +7 951 191-11-11</div>
           </Link>
