@@ -121,14 +121,14 @@ export default function Home() {
             </div>
             <div className="container mx-auto px-4 mb-4 ">
                 <button onClick={handleReturn} className={(isExpanded || isExpandedReab ? "visible " : " invisible h-1" )} >
-                    <div className="text-2xl border-blue-700 hover:scale-105" >⟲ Назад к выбору категории</div>
+                    <div className="text-2xl border-blue-700 ext-black hover:scale-105" >⟲ Назад к выбору категории</div>
                 </button>
-                <div className={"text-lg font-bold"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
+                <div className={"text-lg font-bold ext-black"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
-                    <div className="border gap-3 ml-2 ">
+                    <div className="border gap-3 ml-2 t">
                         <button onClick={handleToggle}>
                             <Image src={kk8f5} width="260" height="260" alt="Кислородные концентраторы" ></Image>
-                            <div className="text-sm mt-2 bottom-auto my-auto"> Кислородные концентраторы</div>
+                            <div className="text-sm mt-2 bottom-auto my-auto text-black"> Кислородные концентраторы</div>
                             <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
                         </button>
                     </div>
@@ -136,7 +136,7 @@ export default function Home() {
                     <div className="border gap-3 ml-2 ">
                         <button onClick={handleToggleReab} >
                             <Image src={srIcon} width="260" height="260" alt="Средства реабилитации" ></Image>
-                            <div className="text-sm mt-2  my-auto"> Средства реабилитации</div>
+                            <div className="text-sm mt-2  my-auto text-black"> Средства реабилитации</div>
                             <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
                         </button>
                     </div>

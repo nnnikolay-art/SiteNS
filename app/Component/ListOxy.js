@@ -38,7 +38,7 @@ const ListOxy = () => {
 
                 <div className="bg-transparent p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kk7f3l} width="200" height="200" alt="Кислородный концентратор Armed 7F-3L" ></Image>
-                    <h2 className="text-xl font-bold mb-2">Armed 7F-3L</h2>
+                    <h2 className="text-xl font-bold mb-2 text-black">Armed 7F-3L</h2>
                     <p className="text-gray-600">Производительность: 3 литра в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-green-600 ml-auto"></div>
@@ -69,7 +69,7 @@ const ListOxy = () => {
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kk7f5l} width="200" height="200" alt="Кислородный концентратор Armed Armed 7F-5L"  ></Image>
-                    <h2 className="text-xl font-bold mb-2">Armed 7F-5L</h2>
+                    <h2 className="text-xl font-bold mb-2 text-black">Armed 7F-5L</h2>
                     <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-blue-600 ml-auto"></div>
@@ -101,7 +101,7 @@ const ListOxy = () => {
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kk8f5} width="200" height="200" alt="Кислородный концентратор Armed Armed Armed 8F-5"  ></Image>
-                    <h2 className="text-xl font-bold mb-2">Armed 8F-5</h2>
+                    <h2 className="text-xl font-bold mb-2 text-black">Armed 8F-5</h2>
                     <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
@@ -134,7 +134,7 @@ const ListOxy = () => {
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kkjay5f} width="200" height="200" alt="Кислородный концентратор Longfian JAY-5A"  ></Image>
-                    <h2 className="text-xl font-bold mb-2">Longfian JAY-5A</h2>
+                    <h2 className="text-xl font-bold mb-2 text-black">Longfian JAY-5A</h2>
                     <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
@@ -166,7 +166,7 @@ const ListOxy = () => {
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kkjay10} width="200" height="200" alt="Кислородный концентратор Longfian JAY-10" ></Image>
-                    <h2 className="text-xl font-bold mb-2">Longfian JAY-10</h2>
+                    <h2 className="text-xl font-bold mb-2 text-black">Longfian JAY-10</h2>
                     <p className="text-gray-600">Производительность: 10 литров в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-red-600 ml-auto"></div>
@@ -176,6 +176,7 @@ const ListOxy = () => {
 
                     <p className="text-gray-600"><b>Прокат (Неделя):</b> 2 990 ₽ </p>
                     <p className="text-gray-600"><b>Прокат (Месяц):</b> 9 990₽ \ месяц</p>
+                    <p className="text-gray-600"><b>Продажа:</b> 44 990₽</p>
 
                     <details>
                         Кислородный концентратор <b>Longfian JAY-10</b><br></br>
