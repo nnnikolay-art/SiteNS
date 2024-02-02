@@ -11,7 +11,7 @@ const ReabStuff = () => {
     return (
         <div>
 
-            <div className="grid  sm:grid-cols-3 grid-cols-1 gap-4 flex  ">
+            <div className="grid  sm:grid-cols-3 grid-cols-1 gap-4 flex text-black  ">
 
                 <div className="bg-transparent w-auto h-auto p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200 ">
                     <Image src={kups} width="200" height="200" alt="Костыли с устройством против скольжения" ></Image>

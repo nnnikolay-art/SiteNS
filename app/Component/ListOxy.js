@@ -34,7 +34,7 @@ const ListOxy = () => {
         <animated.div style={props} >
         <div>
 
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-4 text-black">
 
                 <div className="bg-transparent p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kk7f3l} width="200" height="200" alt="Кислородный концентратор Armed 7F-3L" ></Image>

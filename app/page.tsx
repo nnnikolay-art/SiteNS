@@ -121,9 +121,9 @@ export default function Home() {
             </div>
             <div className="container mx-auto px-4 mb-4 ">
                 <button onClick={handleReturn} className={(isExpanded || isExpandedReab ? "visible " : " invisible h-1" )} >
-                    <div className="text-2xl border-blue-700 ext-black hover:scale-105" >⟲ Назад к выбору категории</div>
+                    <div className="text-2xl border-blue-700 ext-black hover:scale-105 text-black" >⟲ Назад к выбору категории</div>
                 </button>
-                <div className={"text-lg font-bold ext-black"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
+                <div className={"text-lg font-bold text-black"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
                     <div className="border gap-3 ml-2 t">
                         <button onClick={handleToggle}>
