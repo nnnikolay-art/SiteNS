@@ -5,6 +5,9 @@ import kk7f5l from "../../public/ProductImg/7F_5L_w_trans.png";
 import kk8f5 from "../../public/ProductImg/8F_5_w_trans.png";
 import kkjay5f from "../../public/ProductImg/JAY_5A_w_trans.png";
 import kkjay10 from "../../public/ProductImg/LongFian10.jpg";
+import Armed7f5c from "../../public/ProductImg/Armed7f-5c.jpeg";
+
+
 import { useSpring, animated } from '@react-spring/web';
 
 const ListOxy = () => {
@@ -165,6 +168,31 @@ const ListOxy = () => {
                 </div>
 
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
+                    <Image src={Armed7f5c} width="200" height="200" alt="Кислородный концентратор Армед 7F-5C" ></Image>
+                    <h2 className="text-xl font-bold mb-2 text-black">Кислородный концентратор Армед 7F-5C</h2>
+                    <p className="text-gray-600">Производительность: 10 литров в минуту</p>
+                    <div className="flex">
+                        <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                        <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
+                        <div className="w-1/3 h-1 bg-gray-400  ml-auto"></div>
+                    </div>
+                    <p className="text-gray-600"><b>Продажа:</b> 39 990₽</p>
+
+                    <details>
+                        Кислородный концентратор <b>Кислородный концентратор Армед 7F-5C</b><br></br>
+                        <br></br>
+                        Кислородный концентратор <b>Армед 7F-5C</b> производительностью 5 л/мин применяется для профилактики и лечения заболеваний, вызванных дефицитом кислорода. Концентратор кислорода используется как в домашних условиях, так и в медучреждениях. Панель управления проста и удобна. На дисплее отображается время работы в минутах, а индикатор оповещает о рабочем состоянии техники. В конструкции нет кислородных баллонов, что делает аппарат безопасным в использовании. Благодаря колесам и небольшим размерам концентратор легко перемещать. <br></br>
+                        <b>Концентрация КВС на выходе при максимальной производительности</b>  ≥ 93 %<br></br>
+                        <b>Уровень шума (не более)</b>  55 дБА<br></br>
+                        <b>Вес нетто (ед)</b> 16.9 кг<br></br>
+                        <b>Время выхода концентратора на рабочий режим</b> 3 мин<br></br>
+                        <b>Вес брутто (ед)</b> 19 кг<br></br>
+                        <b>Упаковка (ед)</b>  Картонная коробка<br></br>
+                        <b>Габариты в упаковке (ед)</b> 49.5*35.5*58.5 см<br></br>
+                    </details>
+                </div>
+
+                <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={kkjay10} width="200" height="200" alt="Кислородный концентратор Longfian JAY-10" ></Image>
                     <h2 className="text-xl font-bold mb-2 text-black">Longfian JAY-10</h2>
                     <p className="text-gray-600">Производительность: 10 литров в минуту</p>
@@ -210,6 +238,8 @@ const ListOxy = () => {
                         <b>Гарантийный талон</b><br></br>
                     </details>
                 </div>
+
+
 
             </div>
             </div>
