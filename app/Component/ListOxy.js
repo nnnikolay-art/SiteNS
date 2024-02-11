@@ -170,7 +170,7 @@ const ListOxy = () => {
                 <div className="p-4 border rounded shadow hover:border-2 hover:border-blue-500 transition duration-200">
                     <Image src={Armed7f5c} width="200" height="200" alt="Кислородный концентратор Армед 7F-5C" ></Image>
                     <h2 className="text-xl font-bold mb-2 text-black">Кислородный концентратор Армед 7F-5C</h2>
-                    <p className="text-gray-600">Производительность: 10 литров в минуту</p>
+                    <p className="text-gray-600">Производительность: 5 литров в минуту</p>
                     <div className="flex">
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
                         <div className="w-1/3 h-1 bg-blue-600  ml-auto"></div>
