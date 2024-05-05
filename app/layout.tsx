@@ -29,9 +29,20 @@ export default function RootLayout({
       {children}
       </body>
       <div className="text-center bg-gray-100 text-black">
-          <p className="font-bold text-1xl">ИП Жук Никита Анатольевич</p>
-          <p>ИНН: 183313423733, ОГРН: 32183200005883</p>
-          <p className="font-bold" >Имеются противопоказания необходима консультация специалиста </p>
+          <div className="">
+              <div>
+                  <p className="font-bold text-1xl">Режим работы:</p>
+                  <p className="text-1xl">Будни с 9-00 до 18-00</p>
+                  <p className="text-1xl">Выходные с 11-00 до 15-00</p>
+              </div>
+              <br></br>
+              <div>
+                  <p className="font-bold text-1xl">ИП Жук Никита Анатольевич</p>
+                  <p>ИНН: 183313423733, ОГРН: 32183200005883</p>
+                  <p className="font-bold" >Имеются противопоказания необходима консультация специалиста </p>
+              </div>
+          </div>
+
       </div>
     </html>
   )
