@@ -207,15 +207,7 @@ export default function Home() {
                             <Image src={freeTalking} className="mx-auto" width="120" height="120" alt="Бесплатная консультация"></Image>
                         </div>
                     </div>
-
-
-                    <div className="w-full md:w-1/4 px-4 mb-8">
-                        <div className="bg-gray-200 text-black py-1 px-1  rounded-lg shadow-lg">
-                            <h3 className="text-xl text-center  font-semibold mb-4">Работаем круглосуточно</h3>
-                            <Image src={pict24} className="mx-auto" width="150" height="150" alt="Работаем круглосуточно"></Image>
-                        </div>
-                    </div>
-
+                    
                     <div className="w-full md:w-1/4 px-4 mb-8">
                         <div className="bg-gray-200 text-black py-1 px-1  rounded-lg shadow-lg">
                             <h3 className="text-xl text-center  font-semibold mb-4">Можно взять товар в аренду</h3>
