@@ -208,14 +208,14 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/4 px-4 mb-8">
+                    <div className="w-full md:w-1/3 px-4 mb-8">
                         <div className="bg-gray-200 text-black py-1 px-1  rounded-lg shadow-lg">
                             <h3 className="text-xl text-center  font-semibold mb-4">Можно взять товар в аренду</h3>
                             <Image src={lowCost} className="mx-auto" width="150" height="150" alt="Можно взять товар в аренду"></Image>
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/4 px-4 mb-8">
+                    <div className="w-full md:w-1/3 px-4 mb-8">
                         <div className="bg-gray-200  items-center py-1 px-1  text-black rounded-lg shadow-lg">
                             <h3 className="text-xl text-center font-semibold mb-4">Возможно взять товар в рассрочку</h3>
                             <Image src={moneyTime} className="mx-auto" width="150" height="150" alt="Возможно взять товар в рассрочку"></Image>
