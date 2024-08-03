@@ -1551,16 +1551,8 @@ const Search = () => {
                 price: '39 990',
                 city:'Izhevsk'
             }
-
-
-
-
-
-
-
         ]
     }
-
 
     const [itemModal, setItemModal] = useState([data.items]);
     const [isAnimating, setIsAnimating] = useState(false);
