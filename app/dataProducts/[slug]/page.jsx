@@ -1481,7 +1481,7 @@ const Search = () => {
                 city:'Izhevsk'
             },
             {
-                id: 90,
+                id: 85,
                 title: 'Кислородный концентратор Longfian JAY-5',
                 img: 'J5_white.jpeg',
                 desc: 'Производительность 5 литров в минуту',
@@ -1496,7 +1496,7 @@ const Search = () => {
                     'Таймер:есть\n' +
                     'Питание:220В, 50Гц\n' +
                     'Габаритные размеры:35х54х28 см\n' +
-                    'Вес [кг]:16 к7г\n',
+                    'Вес [кг]:16 кг\n',
                 category: 'Кислородные концентраторы',
                 price: '42 990',
                 city:'Izhevsk'
@@ -1676,7 +1676,6 @@ const Search = () => {
         const timer = setTimeout(() => setIsAnimating(false), 200); // Задержка для завершения анимации (500 миллисекунд)
         return () => clearTimeout(timer);
     }, [filteredData.length]);
-    ;
 
     return (
         <div className={"flex flex-col px-4 py-6 mx-auto bg-gray-50 text-black " + (isModalOpen ? "fixed" :"") } >
