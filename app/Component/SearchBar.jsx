@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import router from "next/navigation"
+import { useRouter } from 'next/navigation';
 
 const cities = [{City:"Ижевск", keyCity:"Izhevsk"},  {City:"Краснодар", keyCity:"Krasnodar"}]; // Список городов
 
@@ -9,9 +9,17 @@ const SearchPage = () => {
     const [selectedCity, setSelectedCity] = useState("Izhevsk"); // Состояние для выбранного города
     const [focusType, setFocusType] = useState(false); // Состояние для выбранного города
 
+    const routers = useRouter()
+
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
+
     };
+
+    const handleClick= (e) => {
+        routers.push(`dataProducts/${selectedCity}/?find=${e}`); // Используем обратные кавычки для подстановки переменных
+    };
+
 
     const handleCityChange = (e) => {
         setSelectedCity(e.target.value);
@@ -45,7 +53,7 @@ const SearchPage = () => {
 
     return (
         <div className="">
-        <div className="flex justify-center items-center flex-wrap w-full">
+        <div className="flex justify-center items-center flex-wrap text-black w-full">
             <input
                 type="text"
                 value={searchTerm}
@@ -71,7 +79,7 @@ const SearchPage = () => {
             </select>
             */}
 
-            <button className="bg-blue-200 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded ">
+            <button className="bg-blue-200 hover:bg-blue-300 text-white font-bold  text-black py-2 px-4 rounded ">
                 <Link
                     href={{
                         pathname: '/dataProducts/[slug]/',
@@ -87,11 +95,11 @@ const SearchPage = () => {
         <div>
             {filteredProducts.length > 0 && searchTerm.length > 0  && (
                 <ul className={"m-2 p-2 bg-blue-500 hover:bg-blue-600 text-white rounded" }>
-                    {filteredProducts.slice(0,3).map((product) => (
+                    {filteredProducts.slice(0,5).map((product) => (
                         <li
                             key={product}
                             className={"cursor-pointer font-bold py-2 pl-3 pr-4 "}
-                            onClick={() => setSearchTerm(product)}
+                            onClick={() => handleClick(product)}
                         >
                             {product}
                         </li>
@@ -100,7 +108,7 @@ const SearchPage = () => {
             )}
 
 
-        </div>
+            </div>
         </div>
 
 

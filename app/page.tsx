@@ -99,15 +99,8 @@ export default function Home() {
 
 
       <div className="relative z-10 ">
-          <Link href="tel:+7 951 191-11-11" className="my-5 text-blue-950 text-2xl mx-1 text-center underline">
-              <div>Телефон: +7 951 191-11-11 </div>
-          </Link>
           <SearchBar/>
-
-
           <h1 className="text-blue-900 text-black  text-3xl font-semibold text-center">О компании</h1>
-
-
             <div className="container text-black  font-semibold  mx-auto px-4">
                 <p className="text-2xl text-black text-center  ">Добро пожаловать в нашу компанию ЦентрМедПрокат!</p>
                 <p>Предлагаем широкий выбор медицинского оборудования для аренды и продажи:</p>
@@ -122,9 +115,10 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className="container mx-auto px-4 mb-4 ">
+          <div className="">
+            <div  className="container mx-auto px-4 mb-4 justify-items-center justify-center">
                 <button onClick={handleReturn} className={(isExpanded || isExpandedReab ? "visible " : " invisible h-1" )} >
-                    <div className="text-2xl border-blue-700 ext-black hover:scale-105 text-black" >⟲ Назад к выбору категории</div>
+                    <div className="mx-auto text-2xl border-blue-700 ext-black hover:scale-105 text-black" >⟲ Назад к выбору категории</div>
                 </button>
                 <div className={"text-lg font-bold text-black"+ (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >Наиболее востребованные категории товаров:</div>
                 <div className={"columns-2 flex  shadow-lg " + (isExpanded || isExpandedReab ? " invisible h-1 " : " visible" )} >
@@ -132,7 +126,7 @@ export default function Home() {
                         <button onClick={handleToggle}>
                             <Image src={kk8f5} width="260" height="260" alt="Кислородные концентраторы" ></Image>
                             <div className="text-sm mt-2 bottom-auto my-auto text-black"> Кислородные концентраторы</div>
-                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold text-black bg-blue-200 my-1">Открыть</div>
                         </button>
                     </div>
 
@@ -140,7 +134,7 @@ export default function Home() {
                         <button onClick={handleToggleReab} >
                             <Image src={srIcon} width="260" height="260" alt="Средства реабилитации" ></Image>
                             <div className="text-sm mt-2  my-auto text-black"> Средства реабилитации</div>
-                            <div className="border border-blue-700 rounded-lg text-sm font-bold bg-blue-200 my-1">Открыть</div>
+                            <div className="border border-blue-700 rounded-lg text-sm font-bold text-black bg-blue-200 my-1">Открыть</div>
                         </button>
                     </div>
 
@@ -228,9 +222,9 @@ export default function Home() {
                     <div> Телефон: +7 951 191-11-11</div>
                 </Link>
 
-            </div>
+            </div >
 
-
+          </div>
 
       </div>
         </div>

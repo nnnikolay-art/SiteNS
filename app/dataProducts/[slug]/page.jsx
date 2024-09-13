@@ -10,6 +10,7 @@ const Search = () => {
     const router = useSearchParams();
     console.log(router.get('find'));
 
+
     const findStr = router.get('find')
     const param = useParams();
     const [searchTerm, setSearchTerm] = useState('');
@@ -1778,10 +1779,12 @@ const Search = () => {
             )}
 
 
+                <Modal isOpen={isModalOpen} handleClose={handleCloseModal} itemModal = {itemModal}>
 
-            <Modal isOpen={isModalOpen} handleClose={handleCloseModal} itemModal = {itemModal}>
+                </Modal>
 
-            </Modal>
+
+
 
         </div>
     );
