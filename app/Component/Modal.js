@@ -3,17 +3,25 @@ import Link from "next/link";
 
 
 
-const style = {
-    position: 'absolute',
-
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
+const MODAL_STYLES = {
+    position: "absolute",
+    backgroundColor: "#FFF",
+    padding: "15px",
+    zIndex: "1000",
+    width: "35%",
+    borderRadius: ".5em"
+};
+const OVERLAY_STYLE = {
+    position: "fixed",
+    display: "flex",
+    justifyContent: "center",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0,0,0, .8)",
+    zIndex: "1000",
+    overflowY: "auto"
 };
 
 const Modal = ({ isOpen, handleClose, children, itemModal }) => {
@@ -25,8 +33,8 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
             </div>
 
             {isOpen && (
-                <div className="fixed text-black z-10 inset-0">
-                    <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <div className="fixed text-black z-10 inset-0" style={OVERLAY_STYLE}>
+                    <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0" style={MODAL_STYLES}>
                         <div className=" transition-opacity" aria-hidden="true" onClick={handleClose}>
                             <div className="fixed inset-0 bg-black opacity-50"></div>
                         </div>
@@ -46,7 +54,7 @@ const Modal = ({ isOpen, handleClose, children, itemModal }) => {
                                 {itemModal.price && <p className="text-2xl text-blue-700 bold">Продажа: {itemModal.price} ₽.</p>}
                                 {itemModal.priceA && <p className="text-2xl text-blue-800 bold border-1 border-b">Аренда: {itemModal.priceA}</p>}
 
-                                <p style={{whiteSpace: 'pre-line'}} className="text-sm">{itemModal.longDesc}</p>
+                                <p style={{whiteSpace: 'pre-line'}} className="text-sm"><b>Описание: </b>{itemModal.longDesc}</p>
                             </div>
 
                             <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
