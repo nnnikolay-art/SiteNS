@@ -5,13 +5,42 @@ import logo4 from '../../public/Logo4.jpg'
 import Image from 'next/image'
 import {Dropdown, Text} from "@nextui-org/react";
 import { YMInitializer } from 'react-yandex-metrika';
-
-
+import { useState,useEffect } from "react";
 
 
 const Navbar = () => {
-    return (
 
+
+    const [isVisible, setIsVisible] = useState(true);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+
+            if (prevScrollPos > currentScrollPos) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+
+            }
+            console.log(currentScrollPos,prevScrollPos)
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [prevScrollPos,isVisible]);
+
+
+
+    return (
+        isVisible ?
+            (
         <div className="sticky z-50 flex-col items-center justify-center h-full sticky top-0 bg-white  ">
             <YMInitializer accounts={[94082951]} options={{webvisor: true}} version="2" />
 
@@ -108,6 +137,7 @@ const Navbar = () => {
             </div>
 
         </div>
+            ) : null
 
     );
 };
