@@ -33,7 +33,8 @@ export default function RootLayout({
               <div>
                   <p className="font-bold text-1xl">Режим работы:</p>
                   <p className="text-1xl">Будни с 9-00 до 18-00</p>
-                  <p className="text-1xl">Выходные с 11-00 до 15-00</p>
+                  <p className="text-1xl">Cуббота с 9-00 до 12-00</p>
+                  <p className="text-1xl">Воскресение - Выходной</p>
               </div>
               <br></br>
               <div>
