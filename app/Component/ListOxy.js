@@ -205,7 +205,7 @@ const ListOxy = () => {
 
                     <p className="text-gray-600"><b>Прокат (Неделя):</b> 2 990 ₽ </p>
                     <p className="text-gray-600"><b>Прокат (Месяц):</b> 9 990₽ \ месяц</p>
-                    <p className="text-gray-600"><b>Продажа:</b> 64 990₽</p>
+                    <p className="text-gray-600"><b>Продажа:</b> 74 000₽</p>
 
                     <details>
                         Кислородный концентратор <b>Longfian JAY-10</b><br></br>
